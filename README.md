@@ -20,6 +20,8 @@
 
 [小飞薯RPA🌟小红书晚进场新人救星！✨ 新人养号必备！🔑专注小红书自动化！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ep8oeJEww/?spm_id_from=333.999.0.0&vd_source=0ad5d97e690d971211839f275274ce02)
 
+[🌟小红书新人养号 | 小飞薯RPA多账号演示📱_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1yqh6eZE1w/?spm_id_from=333.999.0.0)
+
 # :heartbeat:小飞薯RPA软件功能
 
 - [x] 自动活跃账号（观看笔记/评论、点赞笔记/评论、收藏笔记)
@@ -65,6 +67,12 @@ A：单用户版本只能养一个号，多用户版本可以养多个号。
 Q：使用多用户版本的小飞薯RPA，但我只开一个号的话会有什么问题吗？
 
 A：没有任何问题。
+
+------
+
+更多问题？请看视频解答：
+
+[🌟2024小红书晚进场新人救星| 小红书自动化 | 小飞薯RPA详细介绍📱_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1xehSeQEKf/?spm_id_from=333.999.0.0)
 
 # :heartpulse:小飞薯RPA软件获取
 
