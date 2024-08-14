@@ -34,6 +34,7 @@
 - [🌟小红书新人养号 | 小飞薯RPA多账号演示📱_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1yqh6eZE1w/)
 - [小红书运营必备 | 小红书自动化神器 | 小红书笔记自动提交_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Ya8bezEr4/)
 - [小飞薯RPA作品管理器 | 小红书自动化运营｜自带小红书热点分析｜你的笔记创作好帮手！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1wsi7eTEte/?spm_id_from=333.999.0.0)
+- [小飞薯RPA🌟轻松捕获小红书热点信息！🔑小红书优选标签！助力每一位小红书博主！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1tcYmeWE2q/?spm_id_from=333.999.0.0)
 
 # 🤖小飞薯RPA软件功能
 
@@ -112,6 +113,12 @@ A：小飞薯RPA有完备的使用手册，软件极易上手，不懂计算机�
 更多问题？请看视频解答：
 
 [🌟2024小红书晚进场新人救星| 小红书自动化 | 小飞薯RPA详细介绍📱_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1xehSeQEKf/?spm_id_from=333.999.0.0)
+
+# 🍀小飞薯RPA用户评价
+
+以下聊天记录均经用户同意发布，再次感谢选择小飞薯RPA。
+
+![image-20240814170137289](README/image-20240814170137289.png)
 
 # :heartbeat:小飞薯RPA软件获取
 
