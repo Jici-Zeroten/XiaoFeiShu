@@ -2,7 +2,7 @@
 
 ![image-20240804134934747](README/image-20240804134934747.png)
 
-0️⃣[『简体中文』介绍](https://github.com/Jici-Zeroten/XiaoFeiShu/blob/main/README.md)  1️⃣[『正體中文』介紹](https://github.com/Jici-Zeroten/XiaoFeiShu/blob/main/zh-tw.md)
+🐼[『简体中文』介绍](README.md) 🐻 [『正體中文』介紹](zh-tw.md)
 
 🌟 小红书晚进场新人救星！✨ 新人养号必备！🚀小红书运营自动化工作流解决方案！🔑专注小红书自动化！
 
