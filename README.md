@@ -43,6 +43,10 @@
 - [小飞薯RPA🌟轻松捕获小红书热点信息！🔑小红书优选标签！助力每一位小红书博主！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1tcYmeWE2q/?spm_id_from=333.999.0.0)
 - [小飞薯RPA | 小红书自动化运营 | 爆粉博主、低粉爆文一键嗅探，轻松掌握竞品信息，对标笔记一手掌握！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Qgs4e7EtW/?spm_id_from=333.1007.0.0)
 
+# 💻小飞薯RPA官方网址
+
+小飞薯RPA唯一官方网址：[小飞薯RPA官方 | XiaoFeiShu RPA Official Website](https://jici-zeroten.github.io/XiaoFeiShu/)
+
 # 🤖小飞薯RPA软件功能
 
 ✅ 自动活跃账号（观看笔记/评论、点赞笔记/评论、收藏笔记等操作)

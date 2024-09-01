@@ -43,6 +43,10 @@
 - [小飛薯RPA🌟輕鬆捕獲小紅書熱點資訊！🔑小紅書優選標籤！助力每一位小紅書博主！_嗶哩嗶哩_bilibili](https://www.bilibili.com/video/BV1tcYmeWE2q/?spm_id_from=333.999.0.0)
 - [小飛薯RPA | 小紅書自動化運營 | 爆粉博主、低粉爆文一鍵嗅探，輕鬆掌握競品資訊，對標筆記一手掌握！_嗶哩嗶哩_bilibili](https://www.bilibili.com/video/BV1Qgs4e7EtW/?spm_id_from=333.1007.0.0)
 
+# 💻小飛薯RPA官方網址
+
+小飛薯RPA唯一官方網址：[小飛薯RPA官方 | XiaoFeiShu RPA Official Website](https://jici-zeroten.github.io/XiaoFeiShu/)
+
 # 🤖小飛薯RPA軟體功能
 
 ✅ 自動活躍賬號（觀看筆記/評論、點贊筆記/評論、收藏筆記等操作)
