@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AKEA,AAsBG,cAtBW,CAEb,QAAQ,CAQP,MAAM,AAYJ,MAAM,EAtBV,cAAc,CAEb,QAAQ,CAQP,MAAM,AAaJ,eAAe,CAAC;EAChB,UAAU,EFpBN,IAAI;CEqBR",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/colors/_presets.scss",
+        "../scss/_mixin.scss",
+        "../scss/_variables.scss",
+        "../scss/_navbar.scss",
+        "../scss/_carousel.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

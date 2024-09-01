@@ -1,0 +1,39 @@
+/* src/FAQ.css */
+
+.question {
+    background: #e0f7fa;
+    border-left: 5px solid #00acc1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.question:hover {
+    background: #b2ebf2;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 4px;
+    border-top: 1px solid #ddd;
+}
+
+.question.active + .answer {
+    display: block;
+}
+
+.question::after {
+    content: "▼";
+    float: right;
+    font-size: 14px;
+    color: #00acc1;
+    transition: transform 0.3s ease;
+}
+
+.question.active::after {
+    transform: rotate(180deg);
+}

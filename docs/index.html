@@ -1,12 +1,986 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first HTML page!</p>
-</body>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <title>小飞薯RPA官方 | XiaoFeiShu RPA Official Website</title>
+    <!-- FQA -->
+    <link rel="stylesheet" href="src/FAQ.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/css/LineIcons.2.0.css">
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Tiny Slider  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css">
+    <!-- Tailwind css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/tailwind.css">
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap" class="relative">
+      <!-- Navbar Start -->      
+      <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
+          <div class="container">
+              <nav class="navbar py-2 navbar-expand-lg flex justify-between items-center relative duration-300">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.svg" alt="Logo">
+                  </a>
+                  <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="toggler-icon"></span>
+                      <span class="toggler-icon"></span>
+                      <span class="toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
+                          <li class="nav-item">
+                            <a class="page-scroll active" href="#hero-area">主页</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="page-scroll" href="#services">服务内容</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="page-scroll" href="#feature">产品亮点</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="page-scroll" href="#team">用户人群</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="page-scroll" href="#testimonial">服务评价</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="page-scroll" href="#pricing">软件获取</a>
+                          </li>
+                         <!--  <li class="nav-item">
+                            <a class="page-scroll" href="#contact">Contact</a>
+                          </li> -->
+                      </ul>
+                  </div>
+                  <div class="header-btn hidden sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
+                    <a class="text-blue-600 border border-blue-600 px-10 py-3 rounded-full duration-300 hover:bg-blue-600 hover:text-white" href="#clients">FAQ</a>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Hero Area Start -->
+    <section id="hero-area" class="bg-blue-100 pt-48 pb-10">
+      <div class="container">
+        <div class="flex justify-between">
+          <div class="w-full text-center">
+            <h2 class="text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp" data-wow-delay="1s">XiaoFeiShu / 小飞薯RPA
+              <br class="hidden lg:block">🚀一套小红书运营自动化工作流解决方案🔑</h2>
+            <div class="text-center mb-10 wow fadeInUp" data-wow-delay="1.2s">
+              <a href="#"
+                rel="nofollow"
+                class="btn">立刻获取</a>
+            </div>
+            <div class="text-center wow fadeInUp" data-wow-delay="1.6s">
+              <img class="img-fluid mx-auto" src="assets/img/hero.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Area End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="py-24">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">提供的服务</h2>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- Services item -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="m-4 wow fadeInRight" data-wow-delay="0.3s">
+              <div class="icon text-5xl">
+                <i class="lni lni-cog"></i>
+              </div>
+              <div>
+                <h3 class="service-title">自动活跃账号</h3>
+                <p class="text-gray-600">观看笔记/评论、点赞笔记/评论、收藏笔记等操作</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="m-4 wow fadeInRight" data-wow-delay="0.6s">
+              <div class="icon text-5xl">
+                <i class="lni lni-bar-chart"></i>
+              </div>
+              <div>
+                <h3 class="service-title">自动精准评论</h3>
+                <p class="text-gray-600">无需预设评论库，AI+精准分析</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="m-4 wow fadeInRight" data-wow-delay="0.9s">
+              <div class="icon text-5xl">
+                <i class="lni lni-briefcase"></i>
+              </div>
+              <div>
+                <h3 class="service-title">自动流量换量</h3>
+                <p class="text-gray-600">完成双向奔赴、抱团取暖等操作</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="m-4 wow fadeInRight" data-wow-delay="1.2s">
+              <div class="icon text-5xl">
+                <i class="lni lni-pencil-alt"></i>
+              </div>
+              <div>
+                <h3 class="service-title">自动发布笔记</h3>
+                <p class="text-gray-600">定时发布，多账号笔记独立管理，笔记违规检测等操作</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="m-4 wow fadeInRight" data-wow-delay="1.5s">
+              <div class="icon text-5xl">
+                <i class="lni lni-mobile"></i>
+              </div>
+              <div>
+                <h3 class="service-title">小红书数据分析</h3>
+                <p class="text-gray-600">舆情分析，热点嗅探，爆粉博主，低粉爆文</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="m-4 wow fadeInRight" data-wow-delay="1.8s">
+              <div class="icon text-5xl">
+                <i class="lni lni-layers"></i>
+              </div>
+              <div>
+                <h3 class="service-title">小红书优选标签</h3>
+                <p class="text-gray-600">大数据优选，数据精确标注</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+
+    <!-- Feature Section Start -->
+    <div id="feature" class="bg-blue-100 py-24">
+      <div class="container">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full lg:w-1/2">
+            <div class="mb-5 lg:mb-0">
+              <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">产品亮点</h2>
+              <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 lg:w-1/2">
+                  <div class="m-3">
+                    <div class="icon text-4xl">
+                      <i class="lni lni-layers"></i>
+                    </div>
+                    <div class="features-content">
+                      <h4 class="feature-title">轻量无感，上手简单</h4>
+                      <p> 仅需简单两步操作就能完成部署，打破技术壁垒，不懂计算机的小白也能轻松使用。专注小红书自动化，避免无用/无关/无效内容导致的软件臃肿，软件体积小、占用资源少，轻松实现托管养号。软件运行在后台，养号全程无感，不影响日常设备正常使用，解决传统自动化软件霸占设备的短板，释放您的生产力工具</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/2">
+                  <div class="m-3">
+                    <div class="icon text-4xl">
+                      <i class="lni lni-gift"></i>
+                    </div>
+                    <div class="features-content">
+                      <h4 class="feature-title">功能强大，规则精确</h4>
+                      <p>模块化设计，具备观看、点赞、收藏、换量、发布等一系列功能，彻底结束四处求赞、四处评论活跃账号的网络流民生活。基于小红书流量规则，通过分析广大优质用户行为习惯，结合小红书专业运营师多年养号、陪跑经验而设计的高度贴合小红书优质账号规则，让用户更专注于优质内容创作</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/2">
+                  <div class="m-3">
+                    <div class="icon text-4xl">
+                      <i class="lni lni-laptop-phone"></i>
+                    </div>
+                    <div class="features-content">
+                      <h4 class="feature-title">优质社群，手册完备</h4>
+                      <p>构建新人优质社群，更加适合晚进场新人小白之间交流互助，扩展你的小红书人脉。社群分享小红书运营相关优质资料，帮助新人快速成长和了解行业动向。配有详细的软件使用手册和对应的视频演示讲解，杜绝模棱两可，让你快速上手</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/2">
+                  <div class="m-3">
+                    <div class="icon text-4xl">
+                      <i class="lni lni-leaf"></i>
+                    </div>
+                    <div class="features-content">
+                      <h4 class="feature-title">运营理论与软件开发深度结合</h4>
+                      <p>软件全部功能开发均在多名小红书职业运营人士指导下完成，有强大运营理论支撑，贴合运营实战工作流，结合使用多个数据分析模型，拒绝无脑开发/空想开发、拒绝无用功能</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <div class="mx-3 lg:mr-0 lg:ml-3 wow fadeInRight" data-wow-delay="0.3s">
+              <img src="assets/img/feature/img-1.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Section End -->
+
+    <!-- Team Section Start -->
+    <section id="team" class="py-24 text-center">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">适用的用户</h2>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <!-- Team Item Starts -->
+          <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="team-item">
+              <div class="team-img relative">
+                <img class="img-fluid" src="assets/img/team/img1.jpg" alt="">
+                <div class="team-overlay">
+                  <!-- <ul class="flex justify-center">
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-indigo-500">
+                        <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-blue-400">
+                        <i class="lni lni-twitter-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-red-500">
+                        <i class="lni lni-instagram-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="text-center px-5 py-3">
+                <h3 class="team-name">小红书新人</h3>
+                <p>刚进入小红书的小白，不了解平台机制和规则，渴望学习</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Item Ends -->
+          <!-- Team Item Starts -->
+          <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="team-item">
+              <div class="team-img relative">
+                <img class="img-fluid" src="assets/img/team/img2.jpg" alt="">
+                <div
+                  class="team-overlay">
+                  <!-- <ul class="flex justify-center">
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-indigo-500">
+                        <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-blue-400">
+                        <i class="lni lni-twitter-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-red-500">
+                        <i class="lni lni-instagram-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="text-center px-5 py-3">
+                <h3 class="team-name">小红书副业</h3>
+                <p>熟悉一些运营技巧，缺乏优质信息源，但没有学习过专业运营相关知识</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Item Ends -->
+          <!-- Team Item Starts -->
+          <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
+            <div class="team-item">
+              <div class="team-img relative">
+                <img class="img-fluid" src="assets/img/team/img3.jpg" alt="">
+                <div class="team-overlay">
+                  <!-- <ul class="flex justify-center">
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-indigo-500">
+                        <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-blue-400">
+                        <i class="lni lni-twitter-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="mx-1">
+                      <a href="#" class="social-link hover:bg-red-500">
+                        <i class="lni lni-instagram-original" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="text-center px-5 py-3">
+                <h3 class="team-name">小红书职业运营</h3>
+                <p>全职投入小红书平台，和行业内人士接触广泛，了解平台大多数规则</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Item Ends -->
+        </div>
+      </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Clients Section Start -->
+    <!-- <div id="clients" class="py-16 bg-blue-100"> -->
+    <div id="clients" class="bg-blue-100 py-24">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">软件问答专区</h2>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="0.3s">
+              <!-- <img class="client-logo" src="assets/img/clients/img1.svg" alt=""> -->
+              <div class="question">小飞薯RPA能否增加我笔记的流量？</div>
+              <div class="answer">小飞薯RPA是一款小红书自动化软件，这并不意味之能给你带来流量（流量规则是小红书定的，用户不得干预），但是结合我们的优质社群，你能够更好地进行流量换量（即双向奔赴、抱团取暖），那么从这个角度来说，是可以增加你笔记的流量的。</div>
+              <div class="question">小飞薯RPA内置的规则是否合理，会不会导致账号限流？</div>
+              <div class="answer">内置规则是通过技术手段分析小红书流量趋势、通过专业运营师经验总结、通过大量账号实践而设计的，并且不断保持更新，在遵循《小飞薯RPA使用手册》的前提下不会导致限流。</div>
+              <div class="question">小飞薯RPA有无安全问题，会不会导致账号被盗？</div>
+              <div class="answer">小飞薯RPA通过用户手机扫码登录，中途不涉及密码输入，且账号数据保存在用户设备本地并定时清除重置，此外还使用设备一机一码绑定机制，无法转载传播使用，没有任何账号泄露问题。</div>
+              <div class="question">使用多用户版本的小飞薯RPA，但我只开一个号的话会有什么问题吗？</div>
+              <div class="answer">没有任何问题。</div>
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="0.3s">
+              <!-- <img class="client-logo" src="assets/img/clients/img1.svg" alt=""> -->
+              <div class="question">使用小飞薯RPA会不会被检测，导致封号？</div>
+              <div class="answer">小飞薯RPA通过模拟真实点击实现自动化，和真人特征高度吻合，且无任何刷取流量的违规操作，符合小红书用户守则，仅仅只是一个快捷工具，不存在封号问题。</div>
+              <div class="question">我的小红书已经违规被限流了，能通过小飞薯RPA养号养回来吗？</div>
+              <div class="answer">根据小红书用户规则，限流程度取决于违规程度，如果是轻微违规所导致的限流，是可以通过养号提升账号权重的，但如果是严重违规所导致的限流，无论是人工养还是软件养，都是无法通过养号养回来的。再次申明，小飞薯RPA只能帮您完成自动化操作。</div>
+              <div class="question">小飞薯RPA多用户版本和单用户版本有什么区别？</div>
+              <div class="answer">单用户版本只能运营一个号，多用户版本可以运营多个号。</div>
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="0.3s">
+              <!-- <img class="client-logo" src="assets/img/clients/img1.svg" alt=""> -->
+              <div class="question">我有多个账号，但我想用单用户版本的小飞薯RPA，我自己手动切换账号，可以吗？</div>
+              <div class="answer">根据小红书用户规则，账号频繁切换会被检测导致降权（是针对账号的检测，和软件无关），手动切换账号当然没问题，但是属于无效养号，不推荐这样钻牛角尖的做法。</div>
+              <div class="question">环境配置难吗？</div>
+              <div class="answer">小飞薯RPA不需要配置环境，无需搭配任何其他软件，即使是新装的系统/全新的电脑也能轻松运行。</div>
+              <div class="question">启动小飞薯RPA后，窗口能不能最小化？</div>
+              <div class="answer">小飞薯RPA采用无感化设计，运行在设备后台，窗口可以最小化，不影响日常设备正常使用。</div>
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="0.3s">
+              <!-- <img class="client-logo" src="assets/img/clients/img1.svg" alt=""> -->
+              <div class="question">启动小飞薯RPA后，电脑能不能锁屏，就是Win + L锁定屏幕这种？</div>
+              <div class="answer">小飞薯RPA采用无感化设计，运行在设备后台，电脑可以锁屏，不影响软件运行。</div>
+              <div class="question">我不太懂电脑，请问小飞薯RPA带使用说明吗？</div>
+              <div class="answer">小飞薯RPA有完备的使用手册，软件极易上手，不懂计算机的小白也能轻松使用。</div>
+              <div class="question">为什么定价如此便宜？</div>
+              <div class="answer">我们早期一直在圈内为运营公司提供服务，近期才发布到互联网上，向广大圈外人士个人用户提供服务，团队主要收入来源是和运营公司、运营团队签订合同，提供出来给各位个人用户使用是只为了帮助个人用户节省运营成本。</div>
+            </div>
+          </div>
+          <!-- <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/img4.svg" alt="">
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/img4.svg" alt="">
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/img4.svg" alt="">
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('.question').forEach(question => {
+          question.addEventListener('click', () => {
+              question.classList.toggle('active');
+          });
+      });
+    </script>
+    <!-- Clients Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section id="testimonial" class="py-24 bg-gray-800">
+      <div class="container">
+        <div class="flex justify-center mx-3">
+          <div class="w-full lg:w-7/12">
+            <div id="testimonials" class="testimonials">
+              <!-- testimonial item start -->
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">更适合小姐妹们使用的运营工具，我是完全不懂电脑的，平时电脑就用<br>来追追剧什么的，软件上手无难度，基本上一学就会，鼠标点点就<br>能完成一系列复杂操作，负责人很耐心，软件功能强大，爆赞！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img1.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Koonk</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「广东」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">全网唯一一个对大学生团队友好的红书社群</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img4.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">童uu</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「上海」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">产品优质，社群优质，资料优质，认识了很多人，也学到了很多</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img5.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">不是山谷</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「浙江」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">要啥自行车，给我冲！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img6.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Wency</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「陕西」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">虽然在做小红书平台，但我本人几乎没时间去养号，之前网上找过一些人工养号，基本<br>上都是拿了钱不办事，打马虎眼，现在AI技术发达了，很多无脑又浪费时间<br>的工作可以交给软件做，整体用下来是一个很好的产品。</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img3.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">南桥晚</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「浙江」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">2024年度红书运营必备工具！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img7.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">听心</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「上海」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">及辞神！及辞神！及辞神！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img9.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">椰糕奶酪卷-</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「广西」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">我要让你们所有人都知道负责人凌晨两点还在回答问题，凌晨三点还在发更新文档！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img8.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">世界没有早八</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「四川」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">及辞——我愿称之为唯一的神！！！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img10.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">浮光</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「北京」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">轻量无广，都是实用功能，比其他一些无脑堆功能的工具强太多了</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img11.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Sunshower</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「上海」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">赛博菩萨，膜拜上香</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img12.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">牧仁</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「江苏」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">很好的工具，看得出来软件各个方面小飞薯RPA团队是花了大心思的，<br>减少了很多平时机械化的操作，祝小飞薯越来越好吧</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img2.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Mila</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「吉林」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item focus:outline-none">
+                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                  <div class="text-center">
+                    <p class="text-gray-600 leading-loose">老师发资料和更新的时候最帅啦！！！！！！！！！！！！！！！！！！</p>
+                  </div>
+                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                    <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img13.png" alt="">
+                  </div>
+                  <div class="mb-2">
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">余.</h2>
+                    <h3 class="font-medium text-white text-sm">一位来自「福建」的小飞薯</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial item end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->  
+
+    <!-- Pricing section Start --> 
+    <section id="pricing" class="py-24">
+      <div class="container">
+        <div class="flex flex-wrap justify-center md:justify-start">
+          <!-- single pricing table starts -->
+          <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
+            <div class="pricing-box wow fadeInLeft" data-wow-delay="1.2s">
+              <div class="mb-3">
+                <h3 class="package-name">免费试用</h3>
+              </div>
+              <div class="mb-5">
+                <p class="text-gray-700">
+                  <span class="font-bold text-2xl">￥0.00</span>
+                  <span class="font-medium text-sm">/ 季度</span>
+                </p>
+              </div>
+              <ul class="mb-16">
+                <li class="text-gray-500 leading-9">默认试用单用户版本</li>
+                <li class="text-gray-500 leading-9">全部功能开放试用</li>
+                <!-- <li class="text-gray-500 leading-9">2gb of storage</li> -->
+              </ul>
+              <a href="https://github.com/Jici-Zeroten/XiaoFeiShu?tab=readme-ov-file#%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8" target="_blank" class="btn">立刻试用</a>
+            </div>
+          </div>
+          <!-- single pricing table ends -->
+          <!-- single pricing table starts -->
+          <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
+            <div class="pricing-box bg-blue-100 wow fadeInLeft" data-wow-delay="1.2s">
+              <div class="mb-3">
+                <h3 class="package-name">单用户版本</h3>
+              </div>
+              <div class="mb-5">
+                <p class="text-gray-700">
+                  <span class="font-bold text-2xl">￥50.00</span>
+                  <span class="font-medium text-sm">/ 季度</span>
+                </p>
+              </div>
+              <ul class="mb-16">
+                <li class="text-gray-500 leading-9">智能养号</li>
+                <li class="text-gray-500 leading-9">笔记发布</li>
+                <li class="text-gray-500 leading-9">热点分析</li>
+                <li class="text-gray-500 leading-9">优选标签</li>
+                <li class="text-gray-500 leading-9">流量嗅探</li>
+                <li class="text-gray-500 leading-9">数据分析</li>
+              </ul>
+              <a href="https://github.com/Jici-Zeroten/XiaoFeiShu?tab=readme-ov-file#%E5%8F%8B%E6%83%85%E6%8D%90%E5%8A%A9" target="_blank" class="btn">立刻捐助 / 捐助减免</a>
+            </div>
+          </div>
+          <!-- single pricing table ends -->
+          <!-- single pricing table starts -->
+          <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
+            <div class="pricing-box">
+              <div class="mb-3">
+                <h3 class="package-name">多用户版本</h3>
+              </div>
+              <div class="mb-5">
+                <p class="text-gray-700">
+                  <span class="font-bold text-2xl">￥70.00</span>
+                  <span class="font-medium text-sm">/ 季度</span>
+                </p>
+              </div>
+              <ul class="mb-16">
+                <li class="text-gray-500 leading-9">多账号运营管理</li>
+                <li class="text-gray-500 leading-9">多账号笔记管理</li>
+                <li class="text-gray-500 leading-9">智能养号</li>
+                <li class="text-gray-500 leading-9">笔记发布</li>
+                <li class="text-gray-500 leading-9">热点分析</li>
+                <li class="text-gray-500 leading-9">优选标签</li>
+                <li class="text-gray-500 leading-9">流量嗅探</li>
+                <li class="text-gray-500 leading-9">数据分析</li>
+              </ul>
+              <a href="https://github.com/Jici-Zeroten/XiaoFeiShu?tab=readme-ov-file#%E5%8F%8B%E6%83%85%E6%8D%90%E5%8A%A9" target="_blank" class="btn">立刻捐助 / 捐助减免</a>
+            </div>
+          </div>
+          <!-- single pricing table ends -->
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Table Section End -->
+
+    <!-- carousel-area Section Start -->
+    <section class="carousel-area bg-gray-800 py-32">
+      <div class="container">
+        <div class="flex">
+          <div class="w-full relative">
+            <div class="portfolio-carousel">
+              <div>
+                <img class="w-full" src="assets/img/slide/img6.png" alt="">
+              </div>
+              <div>
+                <img class="w-full" src="assets/img/slide/img7.png" alt="">
+              </div>
+              <div>
+                <img class="w-full" src="assets/img/slide/img8.png" alt="">
+              </div>
+              <div>
+                <img class="w-full" src="assets/img/slide/img9.png" alt="">
+              </div>
+              <div>
+                <img class="w-full" src="assets/img/slide/img10.png" alt="">
+              </div>
+              <div>
+                <img  class="w-full" src="assets/img/slide/img11.png" alt="">
+              </div>
+              <div>
+                <img  class="w-full" src="assets/img/slide/img12.png" alt="">
+              </div>
+              <div>
+                <img  class="w-full" src="assets/img/slide/img13.png" alt="">
+              </div>
+              <div>
+                <img  class="w-full" src="assets/img/slide/img14.png" alt="">
+              </div>
+              <div>
+                <img  class="w-full" src="assets/img/slide/img15.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- carousel-area Section End -->
+
+    <!-- Subscribe Section Start -->
+    <section id="Subscribes" class="text-center py-20 bg-blue-100">
+      <div class="container">
+        <div class="flex justify-center mx-3">
+          <div class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+            <h4 class="mb-3 section-heading wow fadeInUp" data-wow-delay="0.3s">《来自小飞薯团队负责人的一封信》</h4>
+            <p class="mb-4 text-gray-600 leading-loose text-sm wow fadeInUp" data-wow-delay="0.6s">嘿，各位来自互联网世界的朋友，很感谢你能发现或使用我们的产品，这款产品投入了我们大量的精力，但目前看起来，我们的工作做的还不赖。世界很大显得我们很渺小，很庆幸互联网让我们有机会相遇，在此感谢一群在背后为小飞薯默默付出的小伙伴们和一直支持我们的用户们，祝好。</p>
+            <form for="">
+              <div class="wow fadeInDown" data-wow-delay="0.3s">
+                <input id="emailInput" class="w-full mb-5 bg-white border border-blue-300 rounded-full px-5 py-3 duration-300 focus:border-blue-600 outline-none" name="email" placeholder="也许你可以写一封邮件鼓励我们...">
+                <button class="border-0 bg-blue-600 text-white rounded-full w-12 h-12 duration-300 hover:opacity-75" type="submit" onclick="sendEmail()"><i class="lni lni-arrow-right"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Contact Section Start -->
+    <!-- <section id="contact" class="py-24">    
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-12 text-4xl text-gray-700 font-bold tracking-wide wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
+        </div>
+
+        <div class="flex flex-wrap contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
+          <div class="w-full md:w-1/2">
+            <div class="contact">
+              <h2 class="uppercase font-bold text-xl text-gray-700 mb-5 ml-3">Contact Form</h2>
+              <form id="contactForm" action="assets/contact.php">
+                <div class="flex flex-wrap">
+                  <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
+                    <div class="mx-3">
+                      <input type="text" class="form-input rounded-full" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                    </div>                                 
+                  </div>
+                  <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
+                    <div class="mx-3">
+                      <input type="text" placeholder="Email" id="email" class="form-input rounded-full" name="email" required data-error="Please enter your email">
+                    </div> 
+                  </div>
+                  <div class="w-full">
+                    <div class="mx-3">
+                      <input type="text" placeholder="Subject" id="subject" name="subject" class="form-input rounded-full" required data-error="Please enter your subject">
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="mx-3"> 
+                      <textarea class="form-input rounded-lg" id="message" name="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="submit-button mx-3">
+                      <button class="btn" id="form-submit" type="submit">Send Message</button>
+                    </div>
+                  </div>
+                </div>            
+              </form>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <div class="ml-3 md:ml-12 wow fadeIn">
+              <h2 class="uppercase font-bold text-xl text-gray-700 mb-5">Get In Touch</h2>
+              <div>
+                <div class="flex flex-wrap mb-6 items-center">
+                  <div class="contact-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <p class="pl-3">Skopje, Macedonia</p>
+                </div>
+                <div class="flex flex-wrap mb-6 items-center">
+                  <div class="contact-icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <p class="pl-3">
+                    <a href="#" class="block">email@gmail.com</a>
+                    <a href="#" class="block">tomsaulnier@gmail.com</a>
+                  </p>
+                </div>
+                <div class="flex flex-wrap mb-6 items-center">
+                  <div class="contact-icon">
+                    <i class="lni lni-phone-set"></i>
+                  </div>
+                  <p class="pl-3">
+                    <a href="#" class="block">+42 374 5967</a>
+                    <a href="#" class="block">+99 123 5967</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section> -->
+    <!-- Contact Section End -->
+  
+    <!-- Map Section Start -->
+    <!-- <section id="google-map-area">
+        <div class="mx-6 mb-6">
+            <div class="flex">
+                <div class="w-full">
+                    <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Map Section End -->
+
+	  <!-- Footer Section Start -->
+    <footer id="footer" class="bg-gray-800 py-16">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="mx-3 mb-8">
+              <div class="footer-logo mb-3">
+                <img src="assets/img/logo.svg" alt="">
+              </div>
+              <p class="text-gray-300">躬身入局，还互联网一片净土
+                </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="mx-3 mb-8">
+              <h3 class="font-bold text-xl text-white mb-5">Company</h3>
+              <ul>
+                <li><a href="#" class="footer-links">小飞薯技术与美术团队</a></li>
+                <li><a href="#" class="footer-links">小飞薯运营与管理团队</a></li>
+                <li><a href="#" class="footer-links">小飞薯决策委员会</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="mx-3 mb-8">
+              <h3 class="font-bold text-xl text-white mb-5">About</h3>
+              <ul>
+                <li><a href="#feature" class="footer-links">产品亮点</a></li>
+                <li><a href="#clients" class="footer-links">常见问题</a></li>
+                <li><a href="#testimonial" class="footer-links">用户评价</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="mx-3 mb-8">
+              <h3 class="font-bold text-xl text-white mb-5">Find us on</h3>
+        
+              <ul class="social-icons flex justify-start">
+                <li class="mx-2">
+                  <a href="https://github.com/Jici-Zeroten/XiaoFeiShu"
+                    class="footer-icon hover:bg-indigo-500" target="_blank">
+                    <i class="lni lni-github-original" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="mx-2">
+                  <a href="https://www.bilibili.com/video/BV1Qgs4e7EtW/"
+                    class="footer-icon hover:bg-blue-400" target="_blank">
+                    <i class="lni lni-bold" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="mx-2">
+                  <a href="https://www.google.com/search?q=%E5%B0%8F%E9%A3%9E%E8%96%AFRPA"
+                    class="footer-icon hover:bg-red-500" target="_blank">
+                    <i class="lni lni-google" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="mx-2">
+                  <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=GgN-sUObASWe9eVs0ZEy4PQHmMkDHm5Q&authKey=BL%2BktnAiZiPw8Ha8ZJGUkhYECfb8tJg3HXUWclg42qGrdR12KzKMFog0J20RyGQe&noverify=0&group_code=979372676"
+                    class="footer-icon hover:bg-indigo-600" target="_blank">
+                    <i class="lni lni-quora" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="mx-2">
+                  <a href="https://gitee.com/Jici_Zeroten/XiaoFeiShu"
+                    class="footer-icon hover:bg-indigo-600" target="_blank">
+                    <i class="lni lni-invention" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </footer> 
+    <!-- Footer Section End -->
+
+    <section class="bg-gray-800 py-6 border-t-2 border-gray-700 border-dotted">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full text-center">
+            <p class="text-white">本站点由<a class="text-white duration-300 hover:text-blue-600" href="#" rel="nofollow">『小飞薯RPA团队』</a>设计、<a class="text-white duration-300 hover:text-blue-600" href="#" rel="nofollow">开发、维护</a></p>
+          </div>
+        </div>
+      </div>
+    </section>   
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg z-20 duration-300 hover:bg-blue-400">
+      <i class="lni lni-arrow-up"></i>
+    </a>
+    
+    <!-- Preloader -->
+<!--     <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div> -->
+    <!-- End Preloader -->
+    
+    <!-- All js Here -->
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/contact-form.js"></script>      
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/protect.js"></script>     
+    <script>
+        function sendEmail() {
+            // 获取输入框的内容
+            var emailAddress = document.getElementById('emailInput').value;
+            
+            // 检查是否为空
+            if (emailAddress) {
+                // 构建mailto链接
+                var mailtoLink = 'mailto:' + encodeURIComponent(emailAddress);
+                
+                // 跳转到mailto链接
+                window.location.href = mailtoLink;
+            } else {
+                alert('没有填写邮件内容，是无言的爱吗？那我们收到啦！');
+            }
+        }
+    </script>
+  </body>
 </html>
