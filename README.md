@@ -61,6 +61,16 @@
 
 小飞薯RPA唯一官方网址：[小飞薯RPA官方 | XiaoFeiShu RPA Official Website](https://jici-zeroten.github.io/XiaoFeiShu/)
 
+必应谷歌搜索/谷歌搜索关键字`小飞薯RPA官网`即可直达
+
+![image-20240926202856547](README/image-20240926202856547.png)
+
+![image-20240926202945905](README/image-20240926202945905.png)
+
+![image-20240926203157716](README/image-20240926203157716.png)
+
+![image-20240926203216360](README/image-20240926203216360.png)
+
 # 🤖小飞薯RPA软件功能
 
 ✅ 自动活跃账号（观看笔记/评论、点赞笔记/评论、收藏笔记等操作)
