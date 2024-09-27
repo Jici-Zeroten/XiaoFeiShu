@@ -1,6 +1,6 @@
 # 💕小飞薯RPA基本介绍
 
-![image-20240927095356297](README/image-20240927095356297.png)
+![xiaofeishu](README/xiaofeishu.jpg)
 
 [『简体中文』介绍](README.md)  [『正體中文』介紹](zh-tw.md)
 
