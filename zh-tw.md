@@ -61,7 +61,7 @@
 
 小飛薯RPA唯一官方網址：[小飛薯RPA官方 | XiaoFeiShu RPA Official Website](https://jici-zeroten.github.io/XiaoFeiShu/)
 
-必應谷歌搜尋/谷歌搜尋關鍵字`小飛薯RPA官網`即可直達
+必應搜尋/谷歌搜尋關鍵字`小飛薯RPA官網`即可直達
 
 ![image-20240926202856547](README/image-20240926202856547.png)
 
