@@ -190,7 +190,7 @@ A：小飞薯RPA不需要配置环境，无需搭配任何其他软件，即使�
 此外，有部分小伙伴反映【群等级 `Lv60` 以上】太难了，现删除此规则，想要免费试用的小伙伴可以按照新的规则（任选其一即可）：
 
 1. 访问我们的BiliBili小飞薯视频合集，如下
-    [🌟专注小红书自动化 | 小红书运营福音 |小飞薯RPA视频合集_|小红书晚进场新人救星 哔哩哔哩_bilibili📱](https://www.bilibili.com/video/BV1Qgs4e7EtW/)
+    [🌟专注小红书自动化 | 小红书运营福音 |小飞薯RPA视频合集_|小红书晚进场新人救星 哔哩哔哩_bilibili📱](https://www.bilibili.com/video/BV13h2nYKEYM/)
 
     ![image-20240829131826697](README/image-20240829131826697.png)
 

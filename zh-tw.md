@@ -190,7 +190,7 @@ A：小飛薯RPA不需要配置環境，無需搭配任何其他軟體，即使�
 此外，有部分小夥伴反映【群等級 `Lv60` 以上】太難了，現刪除此規則，想要免費試用的小夥伴可以按照新的規則（任選其一即可）：
 
 1. 訪問我們的BiliBili小飛薯影片合集，如下
-    [🌟專注小紅書自動化 | 小紅書運營福音 |小飛薯RPA影片合集_|小紅書晚進場新人救星 嗶哩嗶哩_bilibili📱](https://www.bilibili.com/video/BV1Qgs4e7EtW/)
+    [🌟專注小紅書自動化 | 小紅書運營福音 |小飛薯RPA影片合集_|小紅書晚進場新人救星 嗶哩嗶哩_bilibili📱](https://www.bilibili.com/video/BV13h2nYKEYM/)
 
     ![image-20240829131826697](README/image-20240829131826697.png)
 
