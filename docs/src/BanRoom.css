@@ -85,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
     background: url('../assets/img/BanRoom/05.png') no-repeat center center;
     background-size: cover; /* 使背景图片覆盖整个容器 */
     opacity: 1;
