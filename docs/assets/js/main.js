@@ -46,11 +46,17 @@
 
       pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            offsetTop: 1 - 60,
-          });
+          const href = elem.getAttribute('href');
+          
+          if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }
+          }
         });
       });
 

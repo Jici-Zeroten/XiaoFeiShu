@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="小飞薯RPA官方，小飞薯RPA官网，小飞薯，小飞薯rpa官方，小飞薯rpa官网，小飞薯IPA官方，小飞薯IPA官网，小红书自动养号软件，小红书 rpa，小红书自动化运营，xiaofeishu，红薯rpa养号，提供小红书自动化解决方案和运营工具">
+    <meta name="keywords" content="小飞薯, 小飞薯rpa, 小飞薯rpa软件, 小飞薯RPA, 小飞薯rpa怎么用, x小飞薯rpa官网, 小飞薯官网, 小红书rpa工具, 小红书rpa开发">
+    
+    <meta property="og:title" content="小飞薯RPA官方">
+    <meta property="og:description" content="提升你的小红书运营效率，使用小飞薯RPA自动化工具。">
+    <meta property="og:image" content="https://gitee.com/Jici_Zeroten/XiaoFeiShu/raw/master/README/image-20240804134934747.png">
+    <meta property="og:url" content="https://jici-zeroten.github.io/XiaoFeiShu/">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="小飞薯RPA官网">
+    <meta name="twitter:description" content="提升小红书运营效率，使用小飞薯RPA自动化工具。">
+    <meta name="twitter:image" content="https://gitee.com/Jici_Zeroten/XiaoFeiShu/raw/master/README/image-20240804134934747.png">
+    
+    <link rel="canonical" href="https://jici-zeroten.github.io/XiaoFeiShu/">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "小飞薯RPA官网",
+        "url": "https://jici-zeroten.github.io/XiaoFeiShu/",
+        "description": "小飞薯RPA为小红书用户提供自动化运营解决方案。",
+        "sameAs": [
+            "https://space.bilibili.com/321978444",
+            "https://github.com/Jici-Zeroten",
+            "https://x.com/Jici010",
+            "https://jici-zeroten.github.io/",
+            "https://gitee.com/Jici_Zeroten",
+            "https://blog.csdn.net/m0_66842854"
+        ]
+    }
+    </script>
+    <script src="assets/js/protect.js"></script>     
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/BanRoom.css">
+    <title>小飞薯RPA官网 | 小黑屋</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url(assets/img/BanRoom/05.png) center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main.table {
+            width: 80vw;
+            height: 80vh;
+            background-color: #fff5;
+            box-shadow: 0 8px 16px #0005;
+            border-radius: 16px;
+            overflow: auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 10%;
+            background-color: #fff4;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .input-group {
+            width: 35%;
+            height: 50%;
+            background-color: #fff5;
+            padding: 0 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .2s;
+        }
+
+        .header .input-group:hover {
+            width: 45%;
+            background-color: #fff8;
+            box-shadow: 0 5px 40px #0002;
+        }
+
+        .header .input-group img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .header .input-group input {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .shell {
+            width: 95%;
+            max-height: calc(90% - 25px);
+            background-color: #fffb;
+            margin: 8px auto;
+            border-radius: 10px;
+            overflow: auto;
+            overflow: overlay;
+        }
+
+        .shell::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            padding: 20px;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #d5d1defe;
+            cursor: pointer;
+        }
+
+        /* 偶数行背景色 */
+        tbody tr:nth-child(even) {
+            background-color: #0000000b;
+        }
+
+        tbody tr:hover {
+            background-color: #fff6 !important;
+        }
+
+        .button {
+            display: inline-block; /* 让按钮成为行内块元素 */
+            padding: 5px 20px; /* 添加水平内边距让按钮有一定间距 */
+            border-radius: 40px;
+            text-align: center;
+            background-color: #6fcaea; /* 确保背景色仍然适用 */
+            white-space: nowrap; /* 防止文字换行 */
+        }
+
+        tr:nth-child(4n) .button {
+            background-color: #86e49d;
+            color: #006b21;
+        }
+
+        tr:nth-child(4n-1) .button {
+            background-color: #ebc474;
+        }
+
+        tr:nth-child(4n+1) .button {
+            background-color: #d893a3;
+/*            color: #b30021;*/
+        }
+
+        tr:nth-child(4n+2) .button {
+            background-color: #6fcaea;
+/*            color: #004aa3;*/
+        }
+
+        .no-wrap {
+            white-space: nowrap; /* 禁止换行 */
+        }
+
+        .no-wrap img {
+            vertical-align: middle; /* 图片和文字垂直对齐 */
+            margin-right: 5px; /* 图片和文字之间的间距 */
+        }
+        .site-footer {
+            width: 100%; /* 占满页面宽度 */
+            position: fixed; /* 固定在页面底部 */
+            bottom: 0; /* 距离底部为 0 */
+            text-align: center;
+/*            background-color: #f9f9f9;*/
+/*            border-top: 1px solid #ddd;*/
+            padding: 10px 0;
+            color: #ffffff;
+        }
+
+        .footer {
+            color: rgba(255, 255, 255, 0.8); /* 半透明白色文字 */
+            font-size: 10px; /* 小字样式 */
+            text-align: center; /* 居中对齐 */
+            padding: 10px; /* 内边距增加视觉效果 */
+            font-style: italic; /* 字体倾斜以体现留言感 */
+            line-height: 1.5; /* 增加行高，提升可读性 */
+            display: flex; /* 使用 Flexbox 布局 */
+            flex-direction: column; /* 垂直排列子元素 */
+            align-items: center; /* 子元素水平居中对齐 */
+            justify-content: center; /* 子元素垂直居中对齐（可选） */
+        }
+
+        /* 美化滚动条 */
+        main.table::-webkit-scrollbar {
+            width: 12px; /* 垂直滚动条宽度 */
+            height: 12px; /* 水平滚动条高度 */
+        }
+
+        main.table::-webkit-scrollbar-track {
+            background: #34495e; /* 淡紫色轨道背景色，与紫色背景相近 */
+            border-radius: 6px;
+        }
+
+        main.table::-webkit-scrollbar-thumb {
+            background: #f4cf47; /* 淡黄色滑块 */
+            border-radius: 6px;
+            border: 2px solid #34495e; /* 滑块边框，增加间距 */
+        }
+
+        main.table::-webkit-scrollbar-thumb:hover {
+            background: #f1c526; /* 悬停时稍微深一点的黄色 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading-container">
+        <div class="loader"></div>
+    </div>
+    <main class="table">
+        <section class="header">
+            <h1>你们将永远活在全国10亿网民的谴责和唾弃中</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="assets/img/BanRoom/search.png">
+            </div>
+        </section>
+        <section class="shell">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id🩸 </th>
+                        <th> 账号信息♻️</th>
+                        <th> 违规事件⚠️</th>
+                        <th> 处置结果🪦</th>
+                        <th> 网友锐评⛏️</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 6429**970 </td>
+                        <td> <img src="assets/img/BanRoom/The_Dishonored_1.png">Jiahao</td>
+                        <td> 境外势力、涉嫌骗取资料/软件、发布误导性言论 </td>
+                        <td> 移出社群、截图证据保留、列入数据厂商及业内圈子征信系统 </td>
+                        <td>
+                            <p class="button">你都来偷资料了，骂你两句不过分吧留学高材生，哈哈哈</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 92*04</td>
+                        <td class="no-wrap"><img src="assets/img/BanRoom/The_Dishonored_2.png"> ㊣珊瑚蟲㊣ </td>
+                        <td> 水军、语言暴力 </td>
+                        <td> 移出社群、截图证据保留 </td>
+                        <td>
+                            <p class="button">笑料。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="footer">
+            <h1>网络不是法外之地，我们不惹事也绝不怕事，对于任何危害小飞薯社群及小红书平台的行为绝不姑息</h1>
+            <a href="index.html" class="button button--bird">
+                <div class="button__wrapper">
+                    <span class="button__text">返回主站</span>
+                </div>
+        
+                <div class="birdBox">
+                    <div class="bird wakeup">
+                        <div class="bird__face"></div>
+                    </div>
+                    <div class="bird wakeup">
+                        <div class="bird__face"></div>
+                    </div>
+                    <div class="bird">
+                        <div class="bird__face"></div>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        本站点由『小飞薯RPA团队』设计、开发、维护
+    </footer>
+    <script>
+        // 模拟加载 3 秒后隐藏动画并显示主内容
+        setTimeout(() => {
+            const loadingContainer = document.getElementById('loading-container');
+            const mainContent = document.getElementById('main-content');
+
+            // 添加淡出效果
+            loadingContainer.style.opacity = 0;
+
+            // 在动画结束后完全隐藏加载容器并显示主内容
+            setTimeout(() => {
+                loadingContainer.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 1000); // 与 CSS 中的 transition 时间一致
+        }, 1000);
+    </script>
+</body>
+</html>
