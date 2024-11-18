@@ -312,22 +312,25 @@
         本站点由『小飞薯RPA团队』设计、开发、维护
     </footer>
     <script>
-        // 确保加载动画隐藏后显示主内容
+        // 模拟加载动画 3 秒后切换主内容
         window.onload = function () {
             const loadingContainer = document.getElementById('loading-container');
             const mainContent = document.getElementById('main-content');
 
-            // 淡出加载动画
-            loadingContainer.style.opacity = 0;
-
-            // 在动画结束后隐藏加载动画，并显示主内容
+            // 延迟 3 秒，保持加载动画显示
             setTimeout(() => {
-                loadingContainer.style.display = 'none'; // 隐藏加载容器
-                mainContent.style.display = 'block'; // 显示主内容
+                // 淡出加载动画
+                loadingContainer.style.opacity = 0;
+
+                // 动画结束后隐藏加载容器，并显示主内容
                 setTimeout(() => {
-                    mainContent.style.opacity = 1; // 开始淡入主内容
-                }, 50); // 小延迟确保 display 生效
-            }, 1000); // 与 CSS transition 时间一致
+                    loadingContainer.style.display = 'none'; // 隐藏加载动画
+                    mainContent.style.display = 'block'; // 显示主内容
+                    setTimeout(() => {
+                        mainContent.style.opacity = 1; // 开始淡入主内容
+                    }, 50); // 小延迟，确保 display 切换已生效
+                }, 1000); // 与 CSS 中的淡出时间一致
+            }, 3000); // 延迟 3 秒后开始淡出加载动画
         };
     </script>
 </body>
