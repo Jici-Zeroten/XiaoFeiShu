@@ -92,15 +92,6 @@ body {
     transition: opacity 1s ease; /* 添加淡出效果 */
 }
 
-/* 主内容样式 */
-#main-content {
-    display: none; /* 初始状态隐藏 */
-    font-size: 20px;
-    font-family: monospace; /* 统一字体 */
-    color: #2c3e50;
-    text-align: center;
-}
-
 /* 返回主站按钮样式 */
 .button--bird{
     --main_color: #f4cf47;
