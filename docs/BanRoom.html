@@ -41,7 +41,7 @@
     }
     </script>
     <script src="assets/js/protect.js"></script>     
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/BanRoom.css">
     <title>小飞薯RPA官网 | 小黑屋</title>
     <style>
@@ -312,20 +312,22 @@
         本站点由『小飞薯RPA团队』设计、开发、维护
     </footer>
     <script>
-        // 模拟加载 3 秒后隐藏动画并显示主内容
         setTimeout(() => {
             const loadingContainer = document.getElementById('loading-container');
             const mainContent = document.getElementById('main-content');
 
-            // 添加淡出效果
+            // 1. 淡出加载动画
             loadingContainer.style.opacity = 0;
 
-            // 在动画结束后完全隐藏加载容器并显示主内容
+            // 2. 在加载动画消失后显示主内容
             setTimeout(() => {
-                loadingContainer.style.display = 'none';
-                mainContent.style.display = 'block';
-            }, 1000); // 与 CSS 中的 transition 时间一致
-        }, 3000);
+                loadingContainer.style.display = 'none'; // 隐藏加载动画
+                mainContent.style.display = 'block'; // 显示主内容
+                setTimeout(() => {
+                    mainContent.style.opacity = 1; // 开始淡入主内容
+                }, 50); // 小延迟确保 display 已生效
+            }, 1000); // 与加载动画的 transition 时间保持一致
+        }, 1200); // 模拟加载时间
     </script>
 </body>
 </html>

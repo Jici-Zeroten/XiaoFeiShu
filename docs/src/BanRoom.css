@@ -94,11 +94,13 @@ body {
 
 /* 主内容样式 */
 #main-content {
-    display: none;
+    display: none; /* 初始状态隐藏 */
     font-size: 20px;
-    font-family: 'JetBrains Mono', monospace; /* 与加载器字体统一 */
+    font-family: monospace; /* 统一字体 */
     color: #2c3e50;
     text-align: center;
+    opacity: 0; /* 添加初始透明度，用于淡入效果 */
+    transition: opacity 1s ease; /* 添加淡入动画 */
 }
 
 /* 返回主站按钮样式 */
