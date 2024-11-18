@@ -85,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 1000;
     background: url('../assets/img/BanRoom/05.png') no-repeat center center;
     background-size: cover; /* 使背景图片覆盖整个容器 */
     opacity: 1;
@@ -99,8 +99,6 @@ body {
     font-family: monospace; /* 统一字体 */
     color: #2c3e50;
     text-align: center;
-    opacity: 0; /* 添加初始透明度，用于淡入效果 */
-    transition: opacity 1s ease; /* 添加淡入动画 */
 }
 
 /* 返回主站按钮样式 */

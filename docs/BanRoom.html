@@ -40,7 +40,7 @@
         ]
     }
     </script>
-    <!-- <script src="assets/js/protect.js"></script>      -->
+    <script src="assets/js/protect.js"></script>     
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/BanRoom.css">
     <title>小飞薯RPA官网 | 小黑屋</title>
@@ -312,26 +312,22 @@
         本站点由『小飞薯RPA团队』设计、开发、维护
     </footer>
     <script>
-        // 模拟加载动画 3 秒后切换主内容
-        window.onload = function () {
+        setTimeout(() => {
             const loadingContainer = document.getElementById('loading-container');
             const mainContent = document.getElementById('main-content');
 
-            // 延迟 3 秒，保持加载动画显示
-            setTimeout(() => {
-                // 淡出加载动画
-                loadingContainer.style.opacity = 0;
+            // 1. 淡出加载动画
+            loadingContainer.style.opacity = 0;
 
-                // 动画结束后隐藏加载容器，并显示主内容
+            // 2. 在加载动画消失后显示主内容
+            setTimeout(() => {
+                loadingContainer.style.display = 'none'; // 隐藏加载动画
+                mainContent.style.display = 'block'; // 显示主内容
                 setTimeout(() => {
-                    loadingContainer.style.display = 'none'; // 隐藏加载动画
-                    mainContent.style.display = 'block'; // 显示主内容
-                    setTimeout(() => {
-                        mainContent.style.opacity = 1; // 开始淡入主内容
-                    }, 50); // 小延迟，确保 display 切换已生效
-                }, 1000); // 与 CSS 中的淡出时间一致
-            }, 3000); // 延迟 3 秒后开始淡出加载动画
-        };
+                    mainContent.style.opacity = 1; // 开始淡入主内容
+                }, 50); // 小延迟确保 display 已生效
+            }, 1000); // 与加载动画的 transition 时间保持一致
+        }, 3000); // 模拟加载时间
     </script>
 </body>
 </html>
