@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <title>小飞薯RPA官网 | 404 - Page Not Found</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #d1d1d1;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .svg-container {
+            max-width: 500px;
+            margin: 0 auto 20px;
+            animation: bounce 2s infinite;
+        }
+
+        .svg-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .back-home {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background: #ff6f61;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .back-home:hover {
+            background: #ff4b47;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .back-home {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 随机显示 SVG -->
+        <div class="svg-container">
+            <img src="assets/img/404/1.svg" alt="404 Image" id="random-svg">
+        </div>
+        <h1>404</h1>
+        <p>当前网页不存在，欢迎使用小飞薯产品，返回主站看看吧</p>
+        <p>Oops! The page you’re looking for doesn’t exist.</p>
+        <a href="index.html" class="back-home">返回主站</a>
+    </div>
+
+    <script>
+        // SVG 文件路径数组
+        const svgs = [
+            'assets/img/404/1.svg', 'assets/img/404/2.svg', 'assets/img/404/3.svg',
+            'assets/img/404/4.svg', 'assets/img/404/5.svg', 'assets/img/404/6.svg',
+            'assets/img/404/7.svg', 'assets/img/404/8.svg', 'assets/img/404/9.svg',
+            'assets/img/404/10.svg', 'assets/img/404/11.svg', 'assets/img/404/12.svg',
+            'assets/img/404/13.svg', 'assets/img/404/14.svg', 'assets/img/404/15.svg'
+        ];
+
+        // 随机选择一个 SVG 并设置为 src
+        const randomSvg = svgs[Math.floor(Math.random() * svgs.length)];
+        document.getElementById('random-svg').src = randomSvg;
+    </script>
+</body>
+
+</html>
