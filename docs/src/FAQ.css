@@ -7,28 +7,36 @@
     margin-bottom: 10px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .question:hover {
     background: #b2ebf2;
+    box-shadow: 0px 4px 10px rgba(0, 172, 193, 0.3);
 }
 
 .answer {
-    display: none;
-    padding: 15px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
     background: #fafafa;
     border-radius: 4px;
     border-top: 1px solid #ddd;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
 }
 
+/* 使用 max-height 触发过渡动画 */
 .question.active + .answer {
-    display: block;
+    max-height: 300px; /* 设置一个足够大的高度以支持内容展开 */
+    padding: 15px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .question::after {
     content: "▼";
-    float: right;
     font-size: 14px;
     color: #00acc1;
     transition: transform 0.3s ease;
