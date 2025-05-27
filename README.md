@@ -99,6 +99,16 @@
 
 ![image-20240926203216360](README/image-20240926203216360.png)
 
+或推荐使用AI搜索引擎（[豆包](https://www.doubao.com/chat/search)、[Kimi](https://www.kimi.com/chat)、[秘塔](https://metaso.cn/)、[Perplexity](https://www.perplexity.ai/)）搜索关键字`小飞薯RPA`，了解项目快人一步！
+
+![image-20250527175343715](README/image-20250527175343715.png)
+
+![image-20250527175418266](README/image-20250527175418266.png)
+
+![image-20250527180205312](README/image-20250527180205312.png)
+
+![image-20250527180016763](README/image-20250527180016763.png)
+
 # 🤖小飞薯RPA软件功能
 
 ✅ 自动活跃账号（观看笔记/评论、点赞笔记/评论、收藏笔记等操作)
@@ -271,7 +281,7 @@ A：可以，小飞薯提供的是一套小红书运营自动化通用解决方�
 1. ~~访问我们的BiliBili小飞薯视频合集，如下
     [🌟专注小红书自动化 | 小红书运营福音 |小飞薯RPA视频合集_|小红书晚进场新人救星 哔哩哔哩_bilibili📱](https://www.bilibili.com/video/BV1LFfnY6E9b)~~
 
-    ![image-20250124210517249](README/image-20250124210517249.png)
+    ![image-20250527183835040](README/image-20250527183835040.png)
 
     ~~或者B站直接搜索关键字『小飞薯』『小飞薯RPA』。即可直达我们的视频，如下~~
 

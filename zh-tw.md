@@ -99,6 +99,16 @@
 
 ![image-20240926203216360](README/image-20240926203216360.png)
 
+或推薦使用AI搜尋引擎（[豆包](https://www.doubao.com/chat/search)、[Kimi](https://www.kimi.com/chat)、[秘塔](https://metaso.cn/)、[Perplexity](https://www.perplexity.ai/)）搜尋關鍵字`小飛薯RPA`，瞭解專案快人一步！
+
+![image-20250527175343715](README/image-20250527175343715.png)
+
+![image-20250527175418266](README/image-20250527175418266.png)
+
+![image-20250527180205312](README/image-20250527180205312.png)
+
+![image-20250527180016763](README/image-20250527180016763.png)
+
 # 🤖小飛薯RPA軟體功能
 
 ✅ 自動活躍賬號（觀看筆記/評論、點贊筆記/評論、收藏筆記等操作)
@@ -271,7 +281,7 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 1. ~~訪問我們的BiliBili小飛薯影片合集，如下
     [🌟專注小紅書自動化 | 小紅書運營福音 |小飛薯RPA影片合集_|小紅書晚進場新人救星 嗶哩嗶哩_bilibili📱](https://www.bilibili.com/video/BV1LFfnY6E9b)~~
 
-    ![image-20250124210517249](README/image-20250124210517249.png)
+    ![image-20250527183835040](README/image-20250527183835040.png)
 
     ~~或者B站直接搜尋關鍵字『小飛薯』『小飛薯RPA』。即可直達我們的影片，如下~~
 
