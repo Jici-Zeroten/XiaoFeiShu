@@ -390,7 +390,7 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 
 # ❤️技術贊助&捐贈特別鳴謝
 
-本项目CDN加速及安全防护由腾讯EdgeOne赞助，[亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
+本專案CDN加速及安全防護由騰訊EdgeOne贊助，[亞洲最佳CDN、邊緣和安全解決方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
 
 ![image-20250712195157743](README/image-20250712195157743.png)
 
