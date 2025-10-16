@@ -400,7 +400,7 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 
 ![image-20250712195157743](README/image-20250712195157743.png)
 
-本项目Star History图表由 [star-history.com](https://star-history.com/) 提供，同时衷心感谢各路小伙伴的🌟Star！
+本專案Star History圖表由 [star-history.com](https://star-history.com/) 提供，同時衷心感謝各路小夥伴的🌟Star！
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)](https://www.star-history.com/#Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)
 
