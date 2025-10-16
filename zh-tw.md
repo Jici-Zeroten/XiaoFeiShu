@@ -404,7 +404,7 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)](https://www.star-history.com/#Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)
 
-鸣谢排名没有先后之分，每隔30日自动同步最新记录，感谢各位支持！！！
+鳴謝排名沒有先後之分，每隔30日自動同步最新記錄，感謝各位支援！！！
 
 | 捐赠者           | 渠道   | 时间                 |
 | ---------------- | ------ | -------------------- |
