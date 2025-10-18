@@ -400,11 +400,11 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 
 ![image-20250712195157743](README/image-20250712195157743.png)
 
-本專案Star History圖表由 [star-history](https://star-history.com/) 提供，同时衷心感谢各路小伙伴的🌟Star，好项目值得被更多人看见！
+本專案Star History圖表由 [star-history](https://star-history.com/) 提供，同時衷心感謝各路小夥伴的🌟Star，好專案值得被更多人看見！
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)](https://www.star-history.com/#Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)
 
-本项目代码质量检测与正反向评级由[fuck-u-code（逆指标）](https://github.com/Done-0/fuck-u-code/)、[pylint（正指标）](https://github.com/pylint-dev/pylint)、[radon（正指标）](https://github.com/rubik/radon)支持，最优代码不是说说而已💪！
+本專案程式碼質量檢測與正反向評級由[fuck-u-code（逆指標）](https://github.com/Done-0/fuck-u-code/)、[pylint（正指標）](https://github.com/pylint-dev/pylint)、[radon（正指標）](https://github.com/rubik/radon)支援，最優程式碼不是說說而已💪！
 
 ![code-score](README/code-score.png)
 
