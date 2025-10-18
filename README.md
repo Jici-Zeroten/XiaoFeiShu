@@ -344,7 +344,7 @@ A：可以，小飞薯提供的是一套小红书运营自动化通用解决方�
 
     > 同时，也欢迎相关人士联系我们进行自荐，生成专属邀请码，促进行业交流合作
 
- 6. **社会爱心公益人士试用**：如果你是热爱公益事业的人士，**可以联系群主出具公益相关证书（纸质/电子证书均可，限一年内）**，凭证书免费试用软件。目前支持平台有：`韩红爱心慈善基金会`、`腾讯公益`、`支付宝公益`。
+ 6. **社会爱心公益人士试用**：如果你是热爱公益事业的人士，**可以联系群主出具公益相关证书（纸质/电子证书均可，限一年内）**，凭证书免费试用软件。目前支持平台有：`韩红爱心慈善基金会`、`腾讯公益`、`支付宝公益`、`字节跳动公益`。
 
 ## 友情捐赠
 
@@ -400,9 +400,13 @@ A：可以，小飞薯提供的是一套小红书运营自动化通用解决方�
 
 ![image-20250712195157743](README/image-20250712195157743.png)
 
-本项目Star History图表由 [star-history.com](https://star-history.com/) 提供，同时衷心感谢各路小伙伴的🌟Star！
+本项目Star History图表由 [star-history](https://star-history.com/) 提供，同时衷心感谢各路小伙伴的🌟Star，好项目值得被更多人看见！
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)](https://www.star-history.com/#Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)
+
+本项目代码质量检测与正反向评级由[fuck-u-code（逆指标）](https://github.com/Done-0/fuck-u-code/)、[pylint（正指标）](https://github.com/pylint-dev/pylint)、[radon（正指标）](https://github.com/rubik/radon)支持，最优代码不是说说而已💪！
+
+![code-score](README/code-score.png)
 
 鸣谢排名没有先后之分，每隔30日自动同步最新记录，感谢各位支持！！！
 
