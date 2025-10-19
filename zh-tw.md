@@ -400,6 +400,10 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 
 ![image-20250712195157743](README/image-20250712195157743.png)
 
+非常感謝 [TgeBrowser](https://www.tgebrowser.com/) 免費提供永久無限制的指紋瀏覽器環境測試，[專業反檢測指紋瀏覽器 | 2025最佳Web3指紋瀏覽器 | 防關聯瀏覽器](https://www.tgebrowser.com/zh)
+
+![image-20251019182013108](README/image-20251019182013108.png)
+
 本專案Star History圖表由 [star-history](https://star-history.com/) 提供，同時衷心感謝各路小夥伴的🌟Star，好專案值得被更多人看見！
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)](https://www.star-history.com/#Jici-Zeroten/XiaoFeiShu&type=date&legend=top-left)
