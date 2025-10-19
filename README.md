@@ -406,6 +406,8 @@ A：可以，小飞薯提供的是一套小红书运营自动化通用解决方�
 
 本项目代码质量检测与正反向评级由[fuck-u-code（逆指标）](https://github.com/Done-0/fuck-u-code/)、[pylint（正指标）](https://github.com/pylint-dev/pylint)、[radon（正指标）](https://github.com/rubik/radon)支持，最优代码不是说说而已💪！
 
+> “正指标（higher-is-better）”表示分数越高质量越好；“逆指标（lower-is-better）”表示分数越低质量越高
+
 ![code-score](README/code-score.png)
 
 鸣谢排名没有先后之分，每隔30日自动同步最新记录，感谢各位支持！！！
