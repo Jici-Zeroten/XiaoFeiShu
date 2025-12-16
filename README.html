@@ -1,0 +1,1501 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/* 待完善 */
+/**
+ * 1. 代码非等宽字体；
+ * 2. kbd样式
+ * 3. 行内代码样式优化
+ */
+
+/* 字体引入：鸿蒙字体 */
+
+html {
+  font-size: 16px;
+  font-family: "HarmonyOS_Sans_SC";
+}
+
+/* 打印页面设置 */
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    /*确保打印颜色一致*/
+    print-color-adjust: exact;
+  }
+
+  body {
+    width: 21cm;
+    /* 设置页面宽度为A4宽度 */
+    height: 29.7cm;
+    /* 设置页面高度为A4高度 */
+    margin: 1cm;
+    /* 设置页面边距 */
+  }
+
+  p {
+    line-height: 1.5rem;
+    /*设置打印内容的行高*/
+  }
+
+  ol,
+  ul,
+  figure,
+  pre {
+    /*设置一些元素不会被分页截断对应有序列表、无序列表、图片(表格)、代码块*/
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+/* 软件内部Markdown样式 */
+#write {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 15px;
+  line-height: 2.25;
+  color: #000;
+  letter-spacing: 1.1px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  background-image: linear-gradient(90deg,
+      rgba(50, 0, 0, 0.05) calc(3% * var(--bg-grid)),
+      rgba(0, 0, 0, 0) calc(3% * var(--bg-grid))),
+    linear-gradient(360deg,
+      rgba(50, 0, 0, 0.05) calc(3% * var(--bg-grid)),
+      rgba(0, 0, 0, 0) calc(3% * var(--bg-grid)));
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+#write p {
+  color: #333;
+  margin: 10px 10px;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light,
+    "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  font-size: 1rem;
+  word-spacing: 2px;
+}
+
+#write h3:after,
+h4:after,
+h5:after,
+h6:after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.2em;
+  height: 2em;
+  width: 1.2em;
+  vertical-align: top;
+}
+
+#write h3:after {
+  background: var(--h3-r-graphic);
+}
+
+#write h4:after {
+  background: var(--h4-r-graphic);
+}
+
+#write h5:after {
+  background: var(--h5-r-graphic);
+}
+
+#write h6:after {
+  background: var(--h6-r-graphic);
+}
+
+/* 一级标题 */
+#write h1:after {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  border-bottom: none;
+}
+
+#write h1 {
+  text-align: center;
+}
+
+/* 二级标题 */
+#write h2 {
+  color: var(--head-title-h2-color);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  width: fit-content;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 1px 12.5px;
+  border-radius: 4px;
+  background: var(--head-title-h2-background);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  transition: all ease-in-out 0.1s;
+}
+
+#write h2.md-heading a {
+  text-decoration: underline;
+  border-bottom: 0;
+  text-decoration-thickness: 1.2px;
+  text-underline-offset: 2px;
+}
+
+#write h2:hover {
+  background-position: -100% -100%;
+  transition: all ease-in-out 0.1s;
+}
+
+/* 三级标题 */
+#write h3 {
+  width: fit-content;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  text-align: left;
+  padding-left: 10px;
+  border-left: 5px solid var(--head-title-color);
+}
+
+/* 三级标题内容 */
+#write h3 span {
+  border-bottom: 2px hidden var(--head-title-color);
+}
+
+#write h3 span:hover {
+  border-bottom: 2px solid var(--head-title-color);
+  transition: all linear 0.1s;
+}
+
+#write h4 {
+  margin: 20px 0;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+#write h4::before {
+  content: "";
+  margin-right: 7px;
+  display: inline-block;
+  background-color: var(--head-title-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: var(--head-title-color) 1px solid;
+  vertical-align: inherit;
+}
+
+#write h5 {
+  margin: 23px 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+#write h5::before {
+  content: "";
+  margin-right: 7px;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: var(--head-title-color) 2px solid;
+  vertical-align: inherit;
+}
+
+#write h6 {
+  margin: 23px 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+#write h6::before {
+  content: "-";
+  color: var(--head-title-color);
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: inherit;
+}
+
+/* 标题自动编号 */
+#write {
+  counter-reset: h1;
+}
+
+h1 {
+  counter-reset: h2;
+}
+
+h2 {
+  counter-reset: h3;
+}
+
+h3 {
+  counter-reset: h4;
+}
+
+h4 {
+  counter-reset: h5;
+}
+
+h5 {
+  counter-reset: h6;
+}
+
+.sidebar-content {
+  counter-reset: h1
+}
+.outline-content {
+  counter-reset: h1
+}
+.outline-h1 {
+  counter-reset: h2
+}
+
+.outline-h2 {
+  counter-reset: h3
+}
+
+.outline-h3 {
+  counter-reset: h4
+}
+
+.outline-h4 {
+  counter-reset: h5
+}
+
+.outline-h5 {
+  counter-reset: h6
+}
+
+
+
+.md-toc-content {
+  counter-reset: h1toc
+}
+
+.md-toc-h1 {
+  counter-reset: h2toc
+}
+
+.md-toc-h2 {
+  counter-reset: h3toc
+}
+
+.md-toc-h3 {
+  counter-reset: h4toc
+}
+
+.md-toc-h4 {
+  counter-reset: h5toc
+}
+
+.md-toc-h5 {
+  counter-reset: h6toc
+}
+
+
+#write h1:before {
+  counter-increment: h1;
+  content: var(--autonum-h1);
+}
+#outline-content li.outline-h1>div>span.outline-label:before {
+  counter-increment: h1;
+  content: var(--autonum-h1);
+}
+.outline-content .outline-h1>.outline-item>.outline-label:before{
+  counter-increment: h1;
+  content: var(--autonum-h1);
+}
+#write span.md-toc-item.md-toc-h1>a:before {
+  counter-increment: h1toc;
+  content: var(--autonum-h1toc);
+}
+
+#write h2:before {
+  counter-increment: h2;
+  content: var(--autonum-h2);
+  color: var(--head-title-h2-color);
+}
+.outline-content .outline-h2>.outline-item>.outline-label:before {
+  counter-increment: h2;
+  content: var(--autonum-h2);
+}
+li.outline-h2>div>a.outline-label:before {
+  counter-increment: h2;
+  content: var(--autonum-h2);
+}
+
+#write span.md-toc-item.md-toc-h2>a:before {
+  counter-increment: h2toc;
+  content: var(--autonum-h2toc);
+}
+
+
+#write h3>span::before {
+  counter-increment: h3;
+  content: var(--autonum-h3);
+  color: var(--element-color);
+}
+#outline-content li.outline-h3>div>span.outline-label:before {
+  counter-increment: h3;
+  content: var(--autonum-h3);
+}
+.outline-content .outline-h3>.outline-item>.outline-label:before {
+  counter-increment: h3;
+  content: var(--autonum-h3);
+}
+#write span.md-toc-item.md-toc-h3>a:before {
+  counter-increment: h3toc;
+  content: var(--autonum-h3toc);
+}
+
+
+#write h4>span::before {
+  counter-increment: h4;
+  content: var(--autonum-h4);
+  color: var(--element-color);
+}
+#outline-content li.outline-h4>div>span.outline-label:before {
+  counter-increment: h4;
+  content: var(--autonum-h4);
+}
+.outline-content .outline-h4>.outline-item>.outline-label:before {
+  counter-increment: h4;
+  content: var(--autonum-h4);
+}
+#write span.md-toc-item.md-toc-h4>a:before {
+  counter-increment: h4toc;
+  content: var(--autonum-h4toc);
+}
+
+
+#write h5>span::before {
+  counter-increment: h5;
+  content: var(--autonum-h5);
+  color: var(--element-color);
+}
+#outline-content li.outline-h5>div>span.outline-label:before {
+  counter-increment: h5;
+  content: var(--autonum-h5);
+}
+.outline-content .outline-h5>.outline-item>.outline-label:before {
+  counter-increment: h5;
+  content: var(--autonum-h5);
+}
+#write span.md-toc-item.md-toc-h5>a:before {
+  counter-increment: h5toc;
+  content: var(--autonum-h5toc);
+}
+
+
+#write h6>span::before {
+  counter-increment: h6;
+  content: var(--autonum-h6);
+  color: var(--element-color);
+}
+#outline-content li.outline-h6>div>span.outline-label:before {
+  counter-increment: h6;
+  content: var(--autonum-h6);
+}
+.outline-content .outline-h6>.outline-item>.outline-label:before {
+  counter-increment: h6;
+  content: var(--autonum-h6);
+}
+#write span.md-toc-item.md-toc-h6>a:before {
+  counter-increment: h6toc;
+  content: var(--autonum-h6toc);
+}
+
+
+/* 列表 */
+::marker {
+  color: var(--element-color-deep);
+}
+
+li.md-list-item {
+  margin: 0.4rem 0;
+}
+
+#write ul,
+#write ol {
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  padding-left: 13px;
+}
+
+#write em {
+  padding: 0 3px 0 0;
+}
+
+#write ul {
+  list-style-type: disc;
+}
+
+#write ul ul {
+  list-style-type: circle;
+}
+
+#write ul ul ul {
+  list-style-type: square;
+}
+
+#write ol {
+  list-style-type: decimal;
+}
+
+#write ol ol {
+  list-style-type: lower-alpha;
+}
+
+#write ol ol ol {
+  list-style-type: lower-roman;
+}
+
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.7rem;
+  text-align: justify;
+  color: #000000;
+  font-weight: 500;
+}
+
+#write li:before {
+  content: "";
+  height: calc(100% - 50px);
+  top: 35px;
+  position: absolute;
+  border-left: 0.5px solid var(--element-color);
+  left: -14.5px;
+}
+
+/* 任务列表样式 */
+#write .md-task-list-item:before {
+  content: none;
+}
+
+#write .md-task-list-item>input {
+  margin: 0px;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  line-height: 1.2rem;
+}
+
+#write .md-task-list-item>input:before {
+  display: inline-block;
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid var(--element-color);
+  border-radius: 30%;
+}
+
+#write .md-task-list-item>input[checked]:before {
+  content: "✔";
+  color: var(--element-color-deep);
+  -webkit-text-stroke: 1px var(--element-color-deep);
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #ffffff;
+  border: 2px solid var(--element-color);
+  border-radius: 30%;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+}
+
+#write input[type="checkbox"] {
+  position: absolute;
+  top: 7px;
+  left: -3px;
+}
+
+#write .md-task-list-item p {
+  margin: 0px 1.8rem;
+}
+
+/* 引用 */
+
+#write blockquote {
+  margin-left: 12px;
+  padding: 12px;
+  background: var(--element-color-soo-shallow);
+  border: 0px solid var(--element-color);
+  border-left-color: var(--element-color);
+  border-left-width: 4px;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+#write blockquote p {
+  color: #000;
+}
+
+/* 超链接 */
+#write a {
+  color: #000;
+}
+
+#write a:visited {
+  color: var(--element-color-deep);
+}
+
+#write a:not(.md-toc-inner) {
+  font-weight: bolder;
+  text-decoration: none;
+  transform: all linear 0.1s;
+}
+
+#write a:hover:not(.md-toc-inner) {
+  font-weight: bold;
+  color: var(--element-color-deep);
+  border-bottom: 1px solid var(--element-color-deep);
+  transform: all linear 0.1s;
+}
+
+#write p a:not(.md-toc-inner)::before {
+  content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath  d='M477.934459 330.486594A50.844091 50.844091 0 0 1 406.752731 258.796425L512 152.532274a254.220457 254.220457 0 0 1 359.467726 359.467726L762.66137 618.772592a50.844091 50.844091 0 1 1-71.690168-71.690169l106.772591-106.772592a152.532274 152.532274 0 0 0-215.578947-215.578947z m70.164846 361.501489A50.844091 50.844091 0 1 1 619.789474 762.66137l-107.281033 107.281033A254.220457 254.220457 0 0 1 152.532274 512L259.813307 406.752731a50.844091 50.844091 0 1 1 72.19861 69.656405l-107.789474 107.281033a152.532274 152.532274 0 0 0 215.578947 215.578947z m-126.601788-16.77855a50.844091 50.844091 0 1 1-71.690168-71.690169l251.678252-251.678252a50.844091 50.844091 0 0 1 71.690169 71.690169z'/%3E%3C/svg%3E");
+  color: #f68800;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  vertical-align: sub;
+}
+
+#write a.md-toc-inner:hover {
+  color: var(--element-color-deep);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#write sup a::before {
+  content: none;
+}
+
+/* 加粗 */
+#write strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* 斜体 */
+#write em {
+  font-style: italic;
+  color: #000;
+}
+
+/* 高亮 */
+#write mark {
+  font-weight: bolder;
+  color: #000;
+  background: var(--element-color-so-shallow);
+}
+
+/* 删除线 */
+#write del {
+  text-decoration-color: var(--element-color-deep);
+}
+
+/* 分隔线*/
+#write hr {
+  height: 1px;
+  padding: 0;
+  border: none;
+  border-top: 2px solid var(--head-title-color);
+}
+
+/* 图片*/
+#write img {
+  border-radius: 6px;
+  margin: 20px auto;
+  object-fit: contain;
+}
+
+/* 图片描述文字 */
+#write figcaption {
+  display: block;
+  font-size: 13px;
+  color: #595959;
+}
+
+/* Yaml */
+pre.md-meta-block {
+  padding: 8px 15px;
+  border: 2px dotted var(--element-color);
+  background-color: var(--element-color-soo-shallow);
+}
+
+/* 行内代码 */
+#write p code {
+  padding: 3px 3px 1px;
+  color: var(--element-color-linecode);
+  background: var(--element-color-linecode-background);
+  border-radius: 3px;
+  font-family: "CascadiaCode" monospace;
+  letter-spacing: 0.5px;
+}
+
+#write li code {
+  color: var(--element-color-linecode);
+}
+
+/* 代码块 */
+
+.md-fences:not([lang="mermaid"])::before {
+  content: attr(lang);
+  font-family: "CascadiaCode" monospace;
+  text-align: right;
+  padding-right: 15px;
+  color: #7e7e7e;
+  display: block;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUwcHgiIGhlaWdodD0iMTMwcHgiPgogIDxlbGxpcHNlIGN4PSI2NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgc3Ryb2tlPSJyZ2IoMjIwLDYwLDU0KSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJyZ2IoMjM3LDEwOCw5NikiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iNjUiIHJ4PSI1MCIgcnk9IjUyIiAgc3Ryb2tlPSJyZ2IoMjE4LDE1MSwzMykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDI0NywxOTMsODEpIi8+CiAgPGVsbGlwc2UgY3g9IjM4NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgIHN0cm9rZT0icmdiKDI3LDE2MSwzNykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDEwMCwyMDAsODYpIi8+Cjwvc3ZnPg==);
+  height: 30px;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
+  border-radius: 5px 5px 0 0;
+  background-position: 6px 10px;
+}
+
+.CodeMirror-wrap .CodeMirror-scroll {
+  overflow-x: auto;
+}
+
+.md-fences .cm-s-inner.CodeMirror {
+  margin-top: -0.5rem;
+}
+
+.cm-s-inner.CodeMirror {
+  padding: 1.2rem 0.8rem;
+  color: #4f5467;
+  font-family: "CascadiaCode" monospace;
+  border-radius: 10px;
+  background-color: #fa0303;
+  /* border: 1px solid #eef2f5;*/
+  line-height: 1.6rem;
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid #9d9d9d52;
+  background: inherit;
+  white-space: nowrap;
+}
+
+pre.CodeMirror-line {
+  padding: 0 1.2rem;
+}
+
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  text-align: right;
+  color: #a3a3a3;
+}
+
+.cm-s-inner.CodeMirror {
+  background: #f8f8f8;
+  border-radius: 0 0 5px 5px;
+  padding: 20px 10px 20px 10px;
+  page-break-before: auto;
+  line-height: 1.8rem;
+}
+
+.md-rawblock .md-rawblock-tooltip {
+  inset: auto 0.3rem auto auto;
+  transform: translateY(-120%);
+}
+
+/* 代码块颜色 */
+.cm-keyword {
+  color: #a626a4 !important;
+  font-weight: 700 !important;
+}
+
+.cm-variable {
+  color: #b92121 !important;
+}
+
+.cm-tag {
+  color: var(--color-cm-keyword) !important;
+  font-weight: 700 !important;
+}
+
+.cm-variable-3,
+.cm-variable-2 {
+  color: #7aadad !important;
+  font-weight: 700 !important;
+}
+
+.cm-def {
+  color: #c18401 !important;
+}
+
+.cm-attribute {
+  color: #8f6aa8 !important;
+}
+
+.cm-comment,
+.md-comment,
+.md-meta {
+  color: #9a9a9a !important;
+}
+
+.cm-string {
+  color: #50a14f !important;
+  font-variant-ligatures: common-ligatures !important;
+}
+
+.cm-link {
+  color: #e46918 !important;
+}
+
+.cm-type {
+  color: #626161;
+}
+
+.cm-property {
+  color: #800a84 !important;
+}
+
+.cm-tag:not(.cm-bracket) {
+  font-weight: 700 !important;
+}
+
+.cm-operator {
+  color: #0abe00 !important;
+}
+
+.cm-number {
+  color: #1694b6 !important;
+}
+
+.cm-meta {
+  color: #4078f2 !important;
+  font-weight: 700 !important;
+}
+
+.cm-builtin {
+  color: #fa6060 !important;
+}
+
+/* KBD */
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  font-weight: bolder;
+  color: var(--element-color-linecode);
+  border: var(--element-color) solid 1px;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+  box-shadow: inset 0 -1px 0 var(--element-color-so-shallow);
+}
+
+kbd:hover {
+  background: var(--element-color-so-shallow);
+}
+
+/** 表格内的单元格*/
+#write table tr th,
+#write table tr td {
+  font-size: 14px;
+  color: #000;
+}
+
+#write .footnotes {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0.8px solid var(--element-color-deep);
+}
+
+#write table.md-table {
+  overflow: hidden;
+}
+
+#write table thead {
+  border-top: 1px solid #dedddd;
+  border-bottom: 1px solid #dedddd;
+}
+
+#write table tbody {
+  border-bottom: 1px solid #dedddd;
+}
+
+/* 脚注文字 */
+#write .footnote-word {
+  font-weight: normal;
+  color: #595959;
+}
+
+/* 脚注上标 */
+#write .footnote-ref {
+  font-weight: normal;
+  color: #595959;
+}
+
+/*脚注链接样式*/
+#write .footnote-item em {
+  font-size: 14px;
+  color: #595959;
+  display: block;
+  background: none;
+}
+
+/* 目录 */
+
+.md-toc * {
+  font-family: "HarmonyOS_Sans_SC";
+}
+
+.md-tooltip-hide>span {
+  display: none;
+}
+
+.md-toc:before {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  content: "目录";
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.md-toc {
+  padding: 20px 0;
+  margin: 0 20px;
+  background-color: var(--element-color-soo-shallow);
+  border: 2px solid var(--element-color);
+  border-radius: 5px;
+}
+
+.md-toc-item {
+  line-height: 1.8em;
+  display: block;
+  color: #333;
+}
+
+/* 程序UI */
+
+/* 侧边栏 */
+
+#typora-sidebar {
+  height: 100%;
+  color: var(--appui-color-text);
+  font-size: 0.92rem;
+  background-color: #fff;
+}
+
+/* 滑块 */
+
+#outline-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+#file-library::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(179, 179, 179, 0.425);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* 侧边栏 文件 */
+
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+  border-radius: 10px;
+  height: 4px;
+  background-color: var(--appui-color);
+}
+
+.file-node-content {
+  line-height: 1.2rem;
+}
+
+.file-tree-node.active>.file-node-content {
+  color: var(--appui-color);
+}
+
+span.file-node-title {
+  color: var(--appui-color-text);
+}
+
+.file-node-icon {
+  color: var(--appui-color-icon);
+  padding-right: 0.2rem;
+}
+
+.file-tree-node.active>.file-node-background {
+  font-weight: bolder;
+  border-left: 4px solid var(--appui-color);
+  border-color: var(--appui-color);
+}
+
+.info-panel-tab-title {
+  font-weight: bolder;
+  color: var(--appui-color-text);
+}
+
+/* 侧边栏 搜索 */
+
+#file-library-search-panel {
+  background-color: #fff;
+}
+
+#file-library-search-input {
+  border-radius: 3px;
+  border-color: var(--appui-color);
+}
+
+#file-library-search-input:focus {
+  border-width: 2px;
+}
+
+/* 侧边栏 大纲 */
+#outline-content .outline-h1>.outline-item {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--element-color-deep);
+}
+
+#outline-content .outline-h1:not(:first-of-type)>.outline-item {
+  margin-top: 10px;
+}
+
+#outline-content .outline-h2>.outline-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--element-color);
+  vertical-align: middle;
+  float: left;
+  margin-top: -2px;
+  margin-right: 11px;
+  margin-left: -24px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  z-index: 100;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+#outline-content .outline-h2::after {
+  content: "";
+  height: calc(100% - 24px);
+  width: 1px;
+  background: var(--element-color);
+  position: absolute;
+  left: 3px;
+  top: 21px;
+}
+
+#outline-content .outline-h2>.outline-item:last-child:after {
+  display: none;
+}
+
+#outline-content .outline-h2>.outline-item>.outline-label {
+  line-height: 1.65rem;
+  margin: 0;
+}
+
+#outline-content .outline-h2>.outline-item {
+  margin-bottom: -3px;
+}
+
+#outline-content .outline-h3>.outline-item>.outline-label {
+  border-left: 2px solid var(--element-color);
+  padding-left: 8px;
+}
+
+.outline-item-active:not(.outline-item-wrapper)::after {
+  content: "";
+  position: relative;
+  width: 11px;
+  height: 8px;
+  background: var(--element-color-deep);
+  float: right;
+  top: -12px;
+  z-index: 100;
+  border-radius: 40% 20% 20% 40%;
+}
+
+/* 导出HTML的样式 */
+body.typora-export {
+  padding-left: 0px;
+}
+
+.typora-export-content .outline-content::before {
+  content: "目录";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.typora-export-sidebar .outline-content {
+  height: 100%;
+  padding-left: 15px;
+  border-right: 1px solid #d2d2d2;
+}
+
+.typora-export-content .typora-export-content {
+  padding-left: 0px;
+}
+
+.typora-export-content .outline-expander {
+  width: 0;
+}
+
+.typora-export-content .outline-item-active>.outline-item::after {
+  content: "";
+  position: relative;
+  width: 11px;
+  height: 8px;
+  background: var(--element-color-deep);
+  float: right;
+  right: 5px;
+  top: -14px;
+  z-index: 100;
+  border-radius: 40% 20% 20% 40%;
+}
+
+.typora-export-content .outline-label {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.outline-content .outline-h1>.outline-item {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--element-color-deep);
+}
+
+.outline-content .outline-h1:not(:first-of-type)>.outline-item {
+  margin-top: 10px;
+}
+
+.outline-content .outline-h2>.outline-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--element-color-deep);
+  vertical-align: middle;
+  float: left;
+  margin-top: -2px;
+  margin-right: 11px;
+  margin-left: -24px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  z-index: 100;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+.outline-content .outline-h2::after {
+  content: "";
+  height: calc(100% - 24px);
+  width: 1px;
+  background: var(--element-color);
+  position: absolute;
+  left: 3px;
+  top: 21px;
+}
+
+.outline-content .outline-h2>.outline-item:last-child:after {
+  display: none;
+}
+
+.outline-content .outline-h2>.outline-item>.outline-label {
+  line-height: 1.65rem;
+  margin: 0;
+}
+
+.outline-content .outline-h2>.outline-item {
+  margin-bottom: -3px;
+}
+
+.outline-content .outline-h3>.outline-item>.outline-label {
+  border-left: 2px solid var(--element-color);
+  padding-left: 8px;
+}@import url();
+
+:root {
+  /* 标题后小图标，借鉴自思源笔记主题——Savor */
+  --h1-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(206, 168, 255, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.8 29.714v0c-1.371 0-2.514-1.143-2.514-2.514v0c0-1.371 1.143-2.514 2.514-2.514v0c1.371 0 2.514 1.143 2.514 2.514v0c0.114 1.371-1.029 2.514-2.514 2.514z'/></svg>") no-repeat center;
+  --h2-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(206, 168, 255, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
+  --h3-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(206, 168, 255, 0.5)' height='28' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
+  --h4-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(206, 168, 255, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>") no-repeat center;
+  --h5-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(206, 168, 255, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286zM4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
+  --h6-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(206, 168, 255, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 16c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>") no-repeat center;
+
+  /* 是否开启网格背景？1 是；0 否 */
+  --bg-grid: 1;
+
+  /* 自动编号格式设置 无需自动编号可全部注释掉或部分注释掉*/
+  /* --autonum-h1: counter(h1) ". ";
+  --autonum-h2: counter(h1) "." counter(h2) ". ";
+  --autonum-h3: counter(h1) "." counter(h2) "." counter(h3) ". ";
+  --autonum-h4: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";
+  --autonum-h5: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+  --autonum-h6: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "; */
+
+   /* 下面是文章内Toc目录自动编号，与上面一样即可 */
+  /* --autonum-h1toc: counter(h1toc) ". ";
+  --autonum-h2toc: counter(h1toc) "." counter(h2toc) ". ";
+  --autonum-h3toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) ". ";
+  --autonum-h4toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) ". ";
+  --autonum-h5toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) ". ";
+  --autonum-h6toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) "." counter(h6toc) ". "; */
+
+  /* 主题颜色 */
+
+  --head-title-color: #cfacfa;
+  /* 标题主色 */
+  --head-title-h2-color: #fff;
+  --head-title-h2-background: linear-gradient(to right, #cfa8ff, #a962ff);
+  /* 二级标题主色，因为二级标题是背景色的，所以单独设置 */
+
+  --element-color: #cfa8ff;
+  /* 元素主色 */
+  --element-color-deep: #a962ff;
+  /* 元素深色 */
+  --element-color-shallow: #dcc1fd;
+  /* 元素浅色 */
+  --element-color-so-shallow: #cfa8ff5c;
+  /* 元素很浅色 */
+  --element-color-soo-shallow: #cfa8ff10;
+  /* 元素非常浅色 */
+
+  --element-color-linecode: #2c1f3c;
+  /* 行内代码文字色 */
+  --element-color-linecode-background: #cfa8ff5c;
+  /* 行内代码背景色 */
+
+  /* 程序本体UI */
+
+  --appui-color: #546f99;
+  /* 程序UI主题色 */
+  --appui-color-icon: #374966;
+  /* 程序UI图标颜色 */
+  --appui-color-text: #374966;
+  /* 程序UI文字色 */
+  --primary-color: #546f95;
+}
+
+
+</style><title>README</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='💕小飞薯rpa基本介绍'><span>💕小飞薯RPA基本介绍</span></h1><p><img src="README/image-20241216181017898.png" referrerpolicy="no-referrer" alt="image-20241216181017898"></p><p><a href='README.md'><span>『简体中文』介绍</span></a><span>  </span><a href='zh-tw.md'><span>『正體中文』介紹</span></a></p><p><span>🌟 小红书晚进场新人救星！✨ 新人养号必备！🚀小红书运营自动化工作流解决方案！🔑专注小红书自动化！</span></p><p><span>📱 小飞薯RPA是一款紧贴小红书优质用户规则开发的自动化软件，💥提供了一套小红书运营自动化工作流解决方案，🎯避免了传统RPA机械化、规则化、易被检测的问题。💡 软件易上手，运行方式简单，功能强大。💪</span></p><p><img src="README/image-20250709153208747.png" referrerpolicy="no-referrer" alt="image-20250709153208747"></p><p><img src="README/image-20250709174540706.png" referrerpolicy="no-referrer" alt="image-20250709174540706"></p><p><img src="README/image-20250709165437421.png" referrerpolicy="no-referrer" alt="image-20250709165437421"></p><p><img src="README/image-20250709200556171.png" referrerpolicy="no-referrer" alt="image-20250709200556171"></p><p><img src="README/image-20250709180255084.png" referrerpolicy="no-referrer" alt="image-20250709180255084"></p><p><img src="README/image-20250709182134911.png" referrerpolicy="no-referrer" alt="image-20250709182134911"></p><p><img src="README/image-20250427152300841.png" referrerpolicy="no-referrer" alt="image-20250427152300841"></p><p><img src="README/image-20240825173827999.png" referrerpolicy="no-referrer" alt="image-20240825173827999"></p><p><img src="README/image-20241013001337365.png" referrerpolicy="no-referrer" alt="image-20241013001337365"></p><p><img src="README/image-20240804134745278.png" referrerpolicy="no-referrer" alt="image-20240804134745278"></p><p><img src="README/image-20240804134816126.png" referrerpolicy="no-referrer" alt="image-20240804134816126"></p><p><img src="README/image-20240804134825948.png" referrerpolicy="no-referrer" alt="image-20240804134825948"></p><p><img src="README/image-20240813180840452.png" referrerpolicy="no-referrer" alt="image-20240813180840452"></p><p><img src="README/image-20240813181000568.png" referrerpolicy="no-referrer" alt="image-20240813181000568"></p><p><img src="README/image-20240825162610440.png" referrerpolicy="no-referrer" alt="image-20240825162610440"></p><p><img src="README/image-20240825162845183.png" referrerpolicy="no-referrer" alt="image-20240825162845183"></p><p><img src="README/image-20240919154043055.png" referrerpolicy="no-referrer" alt="image-20240919154043055"></p><p><img src="README/image-20240923100925451.png" referrerpolicy="no-referrer" alt="image-20240923100925451"></p><p><img src="README/image-20240919154207112.png" referrerpolicy="no-referrer" alt="image-20240919154207112"></p><p><img src="README/image-20241007122806801.png" referrerpolicy="no-referrer" alt="image-20241007122806801"></p><p><img src="README/image-20241007122821005.png" referrerpolicy="no-referrer" alt="image-20241007122821005"></p><p><img src="README/image-20241010011831030.png" referrerpolicy="no-referrer" alt="image-20241010011831030"></p><p><img src="README/image-20250117233626778.png" referrerpolicy="no-referrer" alt="image-20250117233626778"></p><p><img src="README/image-20241021124521804.png" referrerpolicy="no-referrer" alt="image-20241021124521804"></p><p><img src="README/image-20241023144542598.png" referrerpolicy="no-referrer" alt="image-20241023144542598"></p><p><img src="README/image-20241107104636816.png" referrerpolicy="no-referrer" alt="image-20241107104636816"></p><p><img src="README/image-20241107111225008.png" referrerpolicy="no-referrer" alt="image-20241107111225008"></p><p><img src="README/image-20241216141115498.png" referrerpolicy="no-referrer" alt="image-20241216141115498"></p><p><img src="README/image-20250731115044924.png" referrerpolicy="no-referrer" alt="image-20250731115044924"></p><p><img src="README/image-20250731115013432.png" referrerpolicy="no-referrer" alt="image-20250731115013432"></p><p><img src="README/image-20241216141238864.png" referrerpolicy="no-referrer" alt="image-20241216141238864"></p><p><img src="README/image-20241216142245780.png" referrerpolicy="no-referrer" alt="image-20241216142245780"></p><p><img src="README/image-20241216142537611.png" referrerpolicy="no-referrer" alt="image-20241216142537611"></p><p><img src="README/image-20241216143217464.png" referrerpolicy="no-referrer" alt="image-20241216143217464"></p><p><img src="README/image-20241107111310703.png" referrerpolicy="no-referrer" alt="image-20241107111310703"></p><p><span>更多视频演示：</span></p><ul><li><a href='https://www.bilibili.com/video/BV1ep8oeJEww/'><span>小飞薯RPA🌟小红书晚进场新人救星！✨ 新人养号必备！🔑专注小红书自动化！</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1yqh6eZE1w/'><span>🌟小红书新人养号 | 小飞薯RPA多账号演示📱</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1Ya8bezEr4/'><span>小红书运营必备 | 小红书自动化神器 | 小红书笔记自动提交</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1wsi7eTEte/'><span>小飞薯RPA作品管理器 | 小红书自动化运营｜自带小红书热点分析｜你的笔记创作好帮手！</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1tcYmeWE2q/'><span>小飞薯RPA🌟轻松捕获小红书热点信息！🔑小红书优选标签！助力每一位小红书博主！</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1Qgs4e7EtW/'><span>小飞薯RPA | 小红书自动化运营 | 爆粉博主、低粉爆文一键嗅探，轻松掌握竞品信息，对标笔记一手掌握！</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV13h2nYKEYM/'><span>2024小红书自动化运营工具 | 助力红书新老运营 | 小飞薯舆情监控器功能演示</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1LFfnY6E9b/'><span>2025小飞薯RPA第一刊 | 小红书运营再出发！自动化运营从0到1！</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li></ul><h1 id='💻小飞薯rpa官方网址'><span>💻小飞薯RPA官方网址</span></h1><p><span>小飞薯RPA唯一官方网址：</span><a href='https://jici-zeroten.github.io/XiaoFeiShu/'><span>小飞薯RPA官方 | XiaoFeiShu RPA Official Website</span></a></p><p><span>必应搜索/谷歌搜索关键字</span><code>小飞薯RPA官网</code><span>即可直达</span></p><p><img src="README/image-20240926202856547.png" referrerpolicy="no-referrer" alt="image-20240926202856547"></p><p><img src="README/image-20240926202945905.png" referrerpolicy="no-referrer" alt="image-20240926202945905"></p><p><img src="README/image-20240926203157716.png" referrerpolicy="no-referrer" alt="image-20240926203157716"></p><p><img src="README/image-20240926203216360.png" referrerpolicy="no-referrer" alt="image-20240926203216360"></p><p><span>或推荐使用AI搜索引擎（</span><a href='https://www.doubao.com/chat/search'><span>豆包</span></a><span>、</span><a href='https://www.kimi.com/chat'><span>Kimi</span></a><span>、</span><a href='https://metaso.cn/'><span>秘塔</span></a><span>、</span><a href='https://www.perplexity.ai/'><span>Perplexity</span></a><span>）搜索关键字</span><code>小飞薯RPA</code><span>，了解项目快人一步！</span></p><p><img src="README/image-20250527175343715.png" referrerpolicy="no-referrer" alt="image-20250527175343715"></p><p><img src="README/image-20250527175418266.png" referrerpolicy="no-referrer" alt="image-20250527175418266"></p><p><img src="README/image-20250527180205312.png" referrerpolicy="no-referrer" alt="image-20250527180205312"></p><p><img src="README/image-20250527180016763.png" referrerpolicy="no-referrer" alt="image-20250527180016763"></p><h1 id='🤖小飞薯rpa软件功能'><span>🤖小飞薯RPA软件功能</span></h1><p><span>✅ 自动活跃账号（观看笔记/评论、点赞笔记/评论、收藏笔记等操作)</span></p><p><span>✅ 自动精准评论</span></p><p><span>✅ 自动流量换量（完成双向奔赴、抱团取暖等操作）</span></p><p><span>✅ 自动发布笔记（支持定时发布、多账号笔记独立管理、笔记违规检测等操作）</span></p><p><span>✅ 小红书热点分析</span></p><p><span>✅ 小红书优选标签</span></p><p><span>✅ 小红书流量嗅探</span></p><p><span>✅ 小红书数据分析（爆粉博主、低粉爆文等）</span></p><p><span>✅ 社会舆情监控（支持实时舆情监控、舆情大数据可视化分析、多模态模型分析、舆情报告局域网共享）</span></p><p><span>✅ 小红书笔记选题灵感（官方笔记活动、优质选题池等）</span></p><p><span>✅ 小红书SEO（智能挖词、好词优选、相关词联想、词权分析、领域热词、官推组合词、官推强相关词等）</span></p><p><span>✅ 小红书定向领域爆文挖掘（常规爆款、隐藏爆款、钩子等）</span></p><h1 id='💖小飞薯rpa软件亮点'><span>💖小飞薯RPA软件亮点</span></h1><ul><li><span>安装简单：仅需简单两步操作就能完成部署，打破技术壁垒，不懂计算机的小白也能轻松使用</span></li><li><span>手册完备：配有详细的软件使用手册和对应的视频演示讲解，杜绝模棱两可，让你快速上手</span></li><li><span>轻量化：专注小红书自动化，避免无用/无关/无效内容导致的软件臃肿，软件体积小、占用资源少，轻松实现托管养号</span></li><li><span>运营理论与软件开发深度结合：软件全部功能开发均在多名小红书职业运营人士指导下完成，有强大运营理论支撑，贴合运营实战工作流，结合使用多个数据分析模型，拒绝无脑开发/空想开发、拒绝无用功能</span></li><li><span>无感化：软件运行在后台，养号全程无感，不影响日常设备正常使用，解决传统自动化软件霸占设备的短板，释放你的生产力工具</span></li><li><span>功能强大：模块化设计，具备观看、点赞、收藏、换量、发布等一系列功能，彻底结束四处求赞、四处评论活跃账号的网络流民生活</span></li><li><span>不易检测：完全模拟真实用户操作，并带有技术手段规避检测措施，拒绝机械化，规避传统自动化软件特征明显、易被检测的问题</span></li><li><span>平台友好：属于正规运营软件，软件所有操作均属于用户正常操作所产生的流量或数据扰动，没有任何刷取平台流量的行为，也不获取小红书平台数据，同时也不会给小红书支撑平台造成负担。拒绝黑灰产暴力软件对小红书及其支撑平台的侵害，兼顾用户友好、平台友好的双赢局面</span></li><li><span>规则精确：基于小红书流量规则，通过分析广大优质用户行为习惯，结合小红书专业运营师多年养号、陪跑经验而设计的高度贴合小红书优质账号规则，让用户更专注于优质内容创作</span></li><li><span>优质社群：构建新人优质社群，更加适合晚进场新人小白之间交流互助，扩展你的小红书人脉。社群分享小红书运营相关优质资料，帮助新人快速成长和了解行业动向</span></li><li><span>更新活跃：直面软件开发者，手把手教你安装、使用，有问题1对1解决，有bug、有需求、有想法均能及时反馈，并不断增加新功能</span></li></ul><h1 id='❓小飞薯rpa问答专区'><span>❓小飞薯RPA问答专区</span></h1><p><span>Q：小飞薯RPA能否增加我笔记的流量？</span></p><p><span>A：小飞薯RPA是一款小红书自动化软件，这并不意味着能给你带来流量（流量规则是小红书定的，用户不得干预），但是结合我们的优质社群，你能够更好地进行流量换量（即双向奔赴、抱团取暖），那么从这个角度来说，是可以增加你笔记的流量的。</span></p><p><span>Q：小飞薯RPA内置的规则是否合理，会不会导致账号限流？</span></p><p><span>A：内置规则是通过技术手段分析小红书流量趋势、通过专业运营师经验总结、通过大量账号实践而设计的，并且不断保持更新，在遵循《小飞薯RPA使用手册》的前提下不会导致限流。</span></p><p><span>Q：小飞薯RPA有无安全问题，会不会导致账号被盗？</span></p><p><span>A：小飞薯RPA通过用户手机扫码登录，中途不涉及密码输入，且账号数据保存在用户设备本地并定时清除重置，此外还使用设备一机一码绑定机制，无法转载传播使用，没有任何账号泄露问题。</span></p><p><span>Q：使用小飞薯RPA会不会被检测，导致封号？</span></p><p><span>A：小飞薯RPA通过模拟真实点击实现自动化，和真人特征高度吻合，且无任何刷取流量的违规操作，符合小红书用户守则，仅仅只是一个快捷工具，不存在封号问题。</span></p><p><span>Q：我的小红书已经违规被限流了，能通过小飞薯RPA养号养回来吗？</span></p><p><span>A：根据小红书用户规则，限流程度取决于违规程度，如果是轻微违规所导致的限流，是可以通过养号提升账号权重的，但如果是严重违规所导致的限流，无论是人工养还是软件养，都是无法通过养号养回来的。再次申明，小飞薯RPA只能帮你完成自动化操作。</span></p><p><span>Q：小飞薯RPA多用户版本和单用户版本有什么区别？</span></p><p><span>A：单用户版本只能运营一个号，多用户版本可以运营多个号。</span></p><p><span>Q：我有多个账号，但我想用单用户版本的小飞薯RPA，我自己手动切换账号，可以吗？</span></p><p><span>A：根据小红书用户规则，账号频繁切换会被检测导致降权（是针对账号的检测，和软件无关），手动切换账号当然没问题，但是属于无效养号，不推荐这样钻牛角尖的做法。</span></p><p><span>Q：使用多用户版本的小飞薯RPA，但我只开一个号的话会有什么问题吗？</span></p><p><span>A：没有任何问题。</span></p><p><span>Q：启动小飞薯RPA后，窗口能不能最小化？</span></p><p><span>A：小飞薯RPA采用无感化设计，运行在设备后台，窗口可以最小化，不影响日常设备正常使用。</span></p><p><span>Q：启动小飞薯RPA后，电脑能不能锁屏，就是Win + L锁定屏幕这种？</span></p><p><span>A：小飞薯RPA采用无感化设计，运行在设备后台，电脑可以锁屏，不影响软件运行。</span></p><p><span>Q：我不太懂电脑，请问小飞薯RPA带使用说明吗？</span></p><p><span>A：小飞薯RPA有完备的使用手册，软件极易上手，不懂计算机的小白也能轻松使用。</span></p><p><span>Q：环境配置难吗？</span></p><p><span>A：小飞薯RPA不需要配置环境，无需搭配任何其他软件，即使是新装的系统/全新的电脑也能轻松运行。</span></p><p><span>Q：捐赠后可以长期使用吗？</span></p><p><span>A：捐赠后获得软件使用权，可以长期使用，直至团队退出服务为止。</span></p><p><span>Q：后续更新是否还需另外捐赠？</span></p><p><span>A：一次捐赠后获得软件使用权，持续享受更新内容。</span></p><p><span>Q：支持的Mac系统吗？</span></p><p><span>A：目前企业公司和工作室用的电脑基本都是Windows，对Mac版本的需求量很少，暂不考虑发布Mac版本。</span></p><p><span>Q：虚拟机能用吗？</span></p><p><span>A：为保障账号安全性，小飞薯RPA所有操作均需核实用户身份及其设备，虚拟机是无法通过审核的。</span></p><p><span>Q：请问小红书专业号可以使用吗？</span></p><p><span>A：小飞薯提供的是一套小红书运营自动化通用解决方案，个人号、品牌号、专业号、商家号、企业号均可使用。</span></p><p><span>Q：为什么软件老是更新？</span></p><p><span>A：小飞薯是实实在在投放到运营实战中的产品，每天被大量运营公司和工作室高强度使用，软件所有设计理念和用户规则完全贴合运营实战场景与平台，针对运营实战中的反馈数据不断迭代优化，更新是为了使用户得到最新最优的服务体验。</span></p><p><span>Q：国际版小红书REDnote可以用吗？</span></p><p><span>A：可以，小飞薯提供的是一套小红书运营自动化通用解决方案，平台是一致的，不区分。</span></p><hr /><p><span>更多问题？请看视频解答：</span></p><ul><li><a href='https://www.bilibili.com/video/BV1xehSeQEKf/?spm_id_from=333.999.0.0'><span>🌟2024小红书晚进场新人救星| 小红书自动化 | 小飞薯RPA详细介绍📱</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li><li><a href='https://www.bilibili.com/video/BV1t3pdepEkR/?spm_id_from=333.999.0.0&amp;vd_source=0ad5d97e690d971211839f275274ce02'><span>聊聊2024小红书运营，什么用户适合小飞薯RPA，自媒体新手新人博主如何立足，从起号到运营，痛点分析，满满干货</span><em><span>哔哩哔哩</span></em><span>bilibili</span></a></li></ul><h1 id='📢小飞薯rpa原则和底线'><span>📢小飞薯RPA原则和底线</span></h1><p><span>🌟 </span><strong><span>小飞薯：为博主创作提供高效支持</span></strong><span> 🌟</span></p><p><span>小飞薯团队致力于提升用户运营效率，鼓励、引导、辅助博主创作符合小红书平台标准的优质内容，🌈从而为平台及其用户带来双赢的优质服务体验！💡携手共建繁荣的小红书星球！🌍</span></p><p><span>🚫 </span><strong><span>严惩恶意行为，保护平台生态</span></strong><span> 🚫</span></p><blockquote><p><span>📣 截至今日，小飞薯团队共计识别、打击、拒绝、驳回、上报涉小红书平台的黑灰产侵害行为80+个</span></p></blockquote><p><span>对于数据获取、引流截流、流量刷取等恶意黑灰产行为，小飞薯坚决说“不”！⚔️我们将守护平台的纯净环境，维护每一位用户的权益！💪黑灰产人士免开尊口！🤐</span></p><p><span>💥</span><strong><span>专设【小黑屋】栏目，重拳出击不良行为</span></strong><span>👊</span></p><p><span>为此我们在</span><a href='https://jici-zeroten.github.io/XiaoFeiShu/index.html'><span>官方网站</span></a><span>设立的【小黑屋】专栏，展现部分违规用户处置公告，🍉</span><a href='https://jici-zeroten.github.io/XiaoFeiShu/BanRoom.html'><span>戳此，直达围观</span></a><span>👀</span></p><p><img src="README/image-20250422104139575.png" referrerpolicy="no-referrer" alt="image-20250422104139575"><img src="README/image-20250422104212213.png" referrerpolicy="no-referrer" alt="image-20250422104212213"></p><h1 id='🍀小飞薯rpa社群氛围及用户评价'><span>🍀小飞薯RPA社群氛围及用户评价</span></h1><blockquote><p><span>世界很大显得我们很渺小，很庆幸互联网让我们有机会相遇，再次感谢选择并支持小飞薯RPA的创作者们！</span></p></blockquote><p><img src="README/image-20240814170137289.png" referrerpolicy="no-referrer" alt="image-20240814170137289"><img src="README/image-20240829140730020.png" referrerpolicy="no-referrer" alt="image-20240829140730020"><img src="README/image-20250324211753904.png" referrerpolicy="no-referrer" alt="image-20250324211753904"><img src="README/image-20250418101136288.png" referrerpolicy="no-referrer" alt="image-20250418101136288"></p><h1 id='💓小飞薯rpa软件获取'><span>💓小飞薯RPA软件获取</span></h1><p><span>🐧软件咨询交流群：</span><code>979372676</code><span> 、</span><code>339494498</code><span>，也可扫码进群，如下</span></p><blockquote><p><span>⛔️⛔️⛔️ 注意！介于近期个人用户激增，项目启用多个群聊进行分流！</span></p><p><span>为防止广告、水军，群聊由AI机器人自动审核入群，请确保QQ资质无误，欢迎你的加入。</span></p><p><span>此外，这类群聊仅用于分流咨询，完成『免费试用』或『友情捐赠』后，可进入对应小飞薯RPA优质用户社群。</span></p></blockquote><p><img src="README/image-20250526002258592.png" referrerpolicy="no-referrer" alt="image-20250526002258592"></p><h2 id='周年抽奖活动已结束）'><span>周年抽奖（活动已结束）</span></h2><p><span>为庆祝小飞薯RPA项目立项一周年，我们决定启动【抽奖】机制，尽最大诚意回馈更多用户！</span></p><blockquote><p><span>在此，感谢一群在背后为小飞薯默默付出的小伙伴们。同时也感谢一年来信任、支持、陪伴小飞薯项目的你，我们因你闪耀！</span></p></blockquote><p><span>戳此👉</span><a href='https://www.bilibili.com/video/BV1J73Hz6Em4/'><span>周年庆活动视频直达</span></a><span>，周年抽奖具体活动规则如下：</span></p><p><img src="README/image-20250702001815279.png" referrerpolicy="no-referrer" alt="周年活动"></p><h2 id='免费试用'><span>免费试用</span></h2><p><del><span>前</span><code>10</code><span>名加入社群的小伙伴免费获得软件，群等级 </span><code>Lv60</code><span> 以上（包括</span><code>Lv60</code><span>）也可以免费拿软件（单用户版本/多用户版本小飞薯RPA任选）</span></del></p><p><span>目前，前</span><code>10</code><span>名小伙伴免费试用名额已经全部发放完成。</span></p><p><span>此外，有部分小伙伴反映【群等级 </span><code>Lv60</code><span> 以上】太难了，现删除此规则，想要免费试用的小伙伴可以按照新的规则（任选其一即可）：</span></p><ol start='' ><li><p><del><span>访问我们的BiliBili小飞薯视频合集，如下</span>
+<a href='https://www.bilibili.com/video/BV1LFfnY6E9b'><span>🌟专注小红书自动化 | 小红书运营福音 |小飞薯RPA视频合集</span><em><span>|小红书晚进场新人救星 哔哩哔哩</span></em><span>bilibili📱</span></a></del></p><p><img src="README/image-20250702001815276.png" referrerpolicy="no-referrer" alt="image-20250702001815276"></p><p><del><span>或者B站直接搜索关键字『小飞薯』『小飞薯RPA』。即可直达我们的视频，如下</span></del></p><p><img src="README/image-20240818151319027.png" referrerpolicy="no-referrer" alt="image-20240818151319027"></p><p><img src="README/image-20240818151008673.png" referrerpolicy="no-referrer" alt="image-20240818151008673"></p><p><del><span>视频合集存放的是小飞薯RPA软件介绍、更新、演示等系列视频，</span><strong><span>选择最新发布的3个或3个以上视频，每个视频做【点赞 + 投币 + 收藏 + 评论或弹幕（小飞薯yyds！）】操作，截图联系群主</span></strong><span>，即可获得免费试用。</span></del></p></li><li><p><strong><span>在抖音、快手、微信视频号、西瓜视频、今日头条等任一自媒体平台发布我们小飞薯的3个宣传视频（宣传视频群里文件有名为【宣传视频.zip】，解压即可获得），持续曝光两日及以上（总曝光量至少为1000+）</span></strong><span>，并在描述栏目添加如下描述：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 32.395px; left: 29.1956px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">小飞薯RPA官网：https://jici-zeroten.github.io/XiaoFeiShu/</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">项目地址：</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - GitHub（国际）：https://github.com/Jici-Zeroten/XiaoFeiShu</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - Gitee（国内）：https://gitee.com/Jici_Zeroten/XiaoFeiShu</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - Gitcode（国内）：https://gitcode.com/Jici/XiaoFeiShu/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">小飞薯RPA交流群：979372676</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 173px;"></div><div class="CodeMirror-gutters" style="display: none; height: 173px;"></div></div></div></pre><p><strong><span>截图联系群主</span></strong><span>，即可获得免费试用</span></p></li><li><p><strong><span>创作一篇小飞薯宣传文章（支持原创、AI辅助创作），全文介绍或片段提及均可，要求出现项目截图及项目地址</span></strong></p><blockquote><p><span>注意，原创或AI辅助创作时，要遵守发文平台规则和尊重小飞薯项目基本事实，不可夸大宣传和扭曲项目性质，由个人原因导致损毁抹黑小飞薯产品形象的，工作人员将有权拒绝提供试用。</span></p></blockquote><p><strong><span>并在以下任一平台发文投稿，持续曝光两日及以上，截图联系群主</span></strong><span>，即可获得免费试用。目前支持平台有：</span></p><ul><li><a href='https://mp.weixin.qq.com/'><span>微信公众号</span></a></li><li><a href='https://www.jianshu.com/'><span>简书</span></a></li><li><a href='https://www.sohu.com/'><span>搜狐 </span></a></li><li><a href='https://www.163.com/'><span>网易号</span></a></li><li><a href='https://www.zhihu.com/'><span>知乎</span></a></li><li><a href='https://mp.toutiao.com'><span>头条号 </span></a></li><li><a href='https://baijiahao.baidu.com'><span>百家号</span></a></li></ul></li><li><p><strong><span>转发小飞薯的宣传文案【项目截图 + 项目地址 + 文字描述 】至2个或2个以上人数达到50人的行业相关群聊（QQ、微信、钉钉、飞书均可，广告群/冷群/寂静群不算），截图联系群主</span></strong><span>，即可获得免费试用。类似下图</span></p><blockquote><p><span>请注意，在分享、宣传、推荐时，你应该遵守的原则是『客观评价，真心推荐，尽最大限度避免给行业相关群聊造成困扰』。过于生硬或不和谐植入的，造成行业相关群聊困扰的，最终导致损毁抹黑小飞薯产品形象的，工作人员将有权拒绝提供试用。</span></p></blockquote><p><img src="README/image-20240829132126219.png" referrerpolicy="no-referrer" alt="image-20240829132126219"></p><p><img src="README/image-20241021141242502.png" referrerpolicy="no-referrer" alt="image-20241021141242502"></p></li><li><p><strong><span>邀请码试用</span></strong><span>：小飞薯RPA团队会给</span><code>一些优质的运营人士/团队、频道主、UP主、博文主</code><span>以及</span><code>每个小飞薯优质用户社群</code><span>发放专属邀请码，如果你获得了他（她）们的邀请码，</span><strong><span>可以联系群主并告知邀请码</span></strong><span>，凭邀请码免费试用软件。觉得好用的、有意捐赠的，可凭邀请码减免捐赠金额（见下方「友情捐赠」栏目）</span></p><blockquote><p><span>同时，也欢迎相关人士联系我们进行自荐，生成专属邀请码，促进行业交流合作</span></p></blockquote></li><li><p><strong><span>社会爱心公益人士试用</span></strong><span>：如果你是热爱公益事业的人士，</span><strong><span>可以联系群主出具公益相关证书（纸质/电子证书均可，限一年内）</span></strong><span>，凭证书免费试用软件。目前支持平台有：</span><code>韩红爱心慈善基金会</code><span>、</span><code>腾讯公益</code><span>、</span><code>支付宝公益</code><span>、</span><code>字节跳动公益</code><span>。</span></p></li></ol><h2 id='友情捐赠'><span>友情捐赠</span></h2><p><span>关于定价捐赠，一方面是表达你对我们小飞薯的认可，另一方面是为了筛选优质用户从而打造优质社群。</span></p><p><span>有句话，免费的就是最贵的，相信你也不想有蛀米虫混入优质社群中，设置门槛也是为了给小飞薯用户带来优质的服务体验【优质社群里的同志都是经过门槛筛选的、和你一样性质的人，所以社群有多少含金量可以自行思考】。</span></p><p><span>觉得小飞薯不错的，需要通过捐赠获得软件使用权的小伙伴可以参考以下任一途径：</span></p><blockquote><p><span>📣 公益项目捐赠属于个人用户捐赠行为，以下捐赠金额均指最低门槛值，旨在划分和筛选用户</span></p></blockquote><blockquote><p><span>📣 校企/公司/机构/工作室等实体组织如需采购软件，可联系小飞薯RPA相关工作人员说明来意，并告知对应组织名、工号、职务，方便后续洽谈以跟进商业采购合同</span></p></blockquote><ol start='' ><li><p><strong><span>直接捐赠</span></strong><span>：</span><code>小飞薯RPA(单用户版本)</code><span>捐赠</span><del><span>80</span></del><span> 100，</span><code>小飞薯RPA(多用户版本)</code><span>捐赠</span><del><span>130</span></del><span> 150，捐赠金额随AI算力（Token）、服务器租赁、用户规模增长及综合运维成本上涨而上涨</span></p><blockquote><p><span>💥 所以，早期支持者只会更划算，作为公益项目也十分不建议大家直接捐赠，建议获取减免资格后再进行捐赠，减少不必要的支出！</span></p></blockquote></li><li><p><strong><span>项目地址【</span><a href='https://github.com/Jici-Zeroten/XiaoFeiShu'><span>GitHub</span></a><span>、</span><a href='https://gitee.com/Jici_Zeroten/XiaoFeiShu'><span>Gitee</span></a><span>】对小飞薯项目进行【Star + Follow（关注）作者 】，截图联系群主</span></strong><span>，即可八折获得软件， 即捐赠</span><del><span>64</span></del><span> 80(单用户版本)/捐赠</span><del><span>104</span></del><span> 120(多用户版本)</span><img src="README/image-20240711105645259.png" referrerpolicy="no-referrer" alt="image-20240711105645259"><img src="README/image-20240711110232241.png" referrerpolicy="no-referrer" alt="image-20240711110232241"><img src="README/image-20240711110505507.png" referrerpolicy="no-referrer" alt="image-20240711110505507"><img src="README/image-20240711110035536.png" referrerpolicy="no-referrer" alt="image-20240711110035536"></p></li><li><p><strong><span>邀请码减免</span></strong><span>：小飞薯RPA团队会给</span><code>一些优质的运营人士/团队、频道主、UP主、博文主</code><span>以及</span><code>每个小飞薯优质用户社群</code><span>发放专属邀请码，如果你获得了他（她）们的邀请码，</span><strong><span>可以联系群主并告知邀请码</span></strong><span>，凭邀请码捐赠可八折获得软件， 即捐赠</span><del><span>64</span></del><span> 80(单用户版本)/捐赠</span><del><span>104</span></del><span> 120(多用户版本)</span></p></li><li><p><strong><span>拼单减免</span></strong><span>：有3个及以上用户同时捐赠的，</span><strong><span>联系并告知群主和你拼单的小伙伴名单</span></strong><span>，每个人可七折获得软件，即捐赠</span><del><span>56</span></del><span> 70(单用户版本)/捐赠</span><del><span>91</span></del><span> 105(多用户版本)</span></p></li><li><p><span>本项目已经加入《大学生创业帮扶计划》，</span><strong><span>如果你是毕业2年内的大学生或在校大学生，可以通过以下【任一途径】并联系群主，八折获得软件</span></strong><span>（即捐赠</span><del><span>64</span></del><span> 80(单用户版本)/捐赠</span><del><span>104</span></del><span> 120(多用户版本)）：</span></p><blockquote><p><span>📣 截至今日，小飞薯RPA项目已助力国内外15+所高校（含10+所高等院校、3+所专科院校、2+所职业院校）的优质创作者们，感谢认可与支持🎉🎉</span></p></blockquote><ul><li><span>提供由</span><a href='https://www.chsi.com.cn/'><span>中国高等教育学生信息网(学信网)</span></a><span>生成的《教育部学籍在线验证报告》</span></li><li><span>提供所读大学的校园邮箱，完成校园邮箱验证</span></li><li><span>提供所读大学的录取通知书+学生证/校园卡合拍照片</span></li><li><span>出具《大学生创业团队证明材料》纸质材料（需要团队负责老师签名），并提供大学生创业团队负责老师联系方式</span></li><li><span>出具所读大学相关毕业证明，如毕业生资质证明、学位证书、毕业证书、学信档案等</span></li></ul><blockquote><p><span>注意，若学生认证材料中涉及敏感信息的请自行打码，仅用作身份识别</span></p></blockquote></li></ol><h1 id='🍧捐赠码'><span>🍧捐赠码</span></h1><p><span>小飞薯RPA的开发也是倾注了我们很多精力的，一开始只是为了圈内人士使用方便，因为这样能够把更多的时间花在优质内容创作上，之后发现帮了我们很多忙，觉得挺好用的，于是决定分享出来大家一起用！</span></p><blockquote><p><span>毕竟在平台上发还是要按照平台流量规则来，很多时候也许你的内容优质但是流量规则是机械的，因为平台用户很多，酒香也怕巷子深，这也导致新人小白很难立足，这也是我们建立社群的初心。</span></p></blockquote><h2 id='微信'><span>微信</span></h2><p><img src="README/image-20250215174213687.png" referrerpolicy="no-referrer" alt="image-20250215174213687"></p><h2 id='支付宝'><span>支付宝</span></h2><p><img src="README/image-20250215174043999.png" referrerpolicy="no-referrer" alt="image-20250215174043999"></p><h1 id='❤️技术赞助捐赠特别鸣谢'><span>❤️技术赞助&amp;捐赠特别鸣谢</span></h1><p><span>本项目CDN加速及安全防护由腾讯EdgeOne赞助，</span><a href='https://edgeone.ai/zh?from=github'><span>亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne</span></a></p><p><img src="README/image-20250712195157743.png" referrerpolicy="no-referrer" alt="image-20250712195157743"></p><p><span>非常感谢 </span><a href='https://www.tgebrowser.com/'><span>TgeBrowser</span></a><span> 免费提供永久无限制的指纹浏览器环境测试，</span><a href='https://www.tgebrowser.com/zh'><span>专业反检测指纹浏览器 | 2025最佳Web3指纹浏览器 | 防关联浏览器</span></a></p><p><img src="README/image-20251019182013108.png" referrerpolicy="no-referrer" alt="image-20251019182013108"></p><p><span>本项目Star History图表由 </span><a href='https://star-history.com/'><span>star-history</span></a><span> 提供，同时衷心感谢各路小伙伴的🌟Star，好项目值得被更多人看见！</span></p><p><a href='https://www.star-history.com/#Jici-Zeroten/XiaoFeiShu&amp;type=date&amp;legend=top-left'><img src="https://api.star-history.com/svg?repos=Jici-Zeroten/XiaoFeiShu&amp;type=date&amp;legend=top-left" referrerpolicy="no-referrer" alt="Star History Chart"></a></p><p><span>本项目代码质量检测与正反向评级由</span><a href='https://github.com/Done-0/fuck-u-code/'><span>fuck-u-code（逆指标）</span></a><span>、</span><a href='https://github.com/pylint-dev/pylint'><span>pylint（正指标）</span></a><span>、</span><a href='https://github.com/rubik/radon'><span>radon（正指标）</span></a><span>支持，最优代码不是说说而已💪！</span></p><blockquote><p><span>“正指标（higher-is-better）”表示分数越高质量越好；“逆指标（lower-is-better）”表示分数越低质量越高</span></p></blockquote><p><img src="README/code-score.png" referrerpolicy="no-referrer" alt="code-score"></p><p><span>鸣谢排名没有先后之分，每隔30日自动同步最新记录，感谢各位支持！！！</span></p><figure><table><thead><tr><th><span>捐赠者</span></th><th><span>渠道</span></th><th><span>时间</span></th></tr></thead><tbody><tr><td><span>c*1</span></td><td><span>微信</span></td><td><span>2025年11月17日 09:42</span></td></tr><tr><td><span>天天开心^_^</span></td><td><span>支付宝</span></td><td><span>2025年11月17日 15:07</span></td></tr><tr><td><span>柒月</span></td><td><span>微信</span></td><td><span>2025年11月18日 09:25</span></td></tr><tr><td><span>邪恶の矮脚猫</span></td><td><span>微信</span></td><td><span>2025年11月19日 21:52</span></td></tr><tr><td><span>H*0</span></td><td><span>微信</span></td><td><span>2025年11月20日 17:07</span></td></tr><tr><td><span>胡小咪咪咪</span></td><td><span>微信</span></td><td><span>2025年11月22日 03:16</span></td></tr><tr><td><span>文字只是个符号</span></td><td><span>微信</span></td><td><span>2025年11月23日 08:45</span></td></tr><tr><td><span>Cc</span></td><td><span>微信</span></td><td><span>2025年11月24日 03:51</span></td></tr><tr><td><span>是果果呀</span></td><td><span>微信</span></td><td><span>2025年11月25日 12:24</span></td></tr><tr><td><span>立铭</span></td><td><span>支付宝</span></td><td><span>2025年11月26日 06:30</span></td></tr><tr><td><span>Miss.L</span></td><td><span>微信</span></td><td><span>2025年11月29日 16:43</span></td></tr><tr><td><span>苏苏苏</span></td><td><span>微信</span></td><td><span>2025年12月01日 02:30</span></td></tr><tr><td><span>*.</span></td><td><span>微信</span></td><td><span>2025年12月02日 13:37</span></td></tr><tr><td><span>鹿真fit</span></td><td><span>支付宝</span></td><td><span>2025年12月02日 22:41</span></td></tr><tr><td><span>种完太阳就冬眠</span></td><td><span>微信</span></td><td><span>2025年12月03日 02:05</span></td></tr><tr><td><span>**伟</span></td><td><span>支付宝</span></td><td><span>2025年12月03日 14:31</span></td></tr><tr><td><span>zynfancy</span></td><td><span>微信</span></td><td><span>2025年12月04日 00:50</span></td></tr><tr><td><span>*恒</span></td><td><span>微信</span></td><td><span>2025年12月05日 15:39</span></td></tr><tr><td><span>菠萝派</span></td><td><span>支付宝</span></td><td><span>2025年12月06日 05:31</span></td></tr><tr><td><span>🤫*U</span></td><td><span>微信</span></td><td><span>2025年12月06日 21:34</span></td></tr><tr><td><span>当涂</span></td><td><span>微信</span></td><td><span>2025年12月07日 00:26</span></td></tr><tr><td><span>“刻骨铭心’</span></td><td><span>微信</span></td><td><span>2025年12月10日 08:24</span></td></tr><tr><td><span>*乾</span></td><td><span>微信</span></td><td><span>2025年12月11日 14:22</span></td></tr><tr><td><span>*子</span></td><td><span>支付宝</span></td><td><span>2025年12月12日 16:30</span></td></tr><tr><td><span>hello 单淼</span></td><td><span>微信</span></td><td><span>2025年12月12日 16:50</span></td></tr><tr><td><span>凜日還夏</span></td><td><span>微信</span></td><td><span>2025年12月13日 10:54</span></td></tr></tbody></table></figure></div></div>
+</body>
+</html>
