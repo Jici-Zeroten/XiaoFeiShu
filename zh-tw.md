@@ -400,7 +400,7 @@ A：可以，小飛薯提供的是一套小紅書運營自動化通用解決方�
 
 ![image-20250712195157743](README/image-20250712195157743.png)
 
-非常感謝 [TgeBrowser](https://www.tgebrowser.com/) 免費提供永久無限制的指紋瀏覽器環境測試，[专业反检测指纹浏览器 | 最佳Web3指纹浏览器 | 防关联浏览器](https://www.tgebrowser.com/zh)
+非常感謝 [TgeBrowser](https://www.tgebrowser.com/) 免費提供永久無限制的指紋瀏覽器環境測試，[專業反檢測指紋瀏覽器 | 最佳Web3指紋瀏覽器 | 防關聯瀏覽器](https://www.tgebrowser.com/zh)
 
 ![image-20251019182013108](README/image-20251019182013108.png)
 
